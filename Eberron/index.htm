@@ -21,16 +21,16 @@
 <body>
   <div id="app">正在载入...</div>
   <script>
-    window.$docsify = {
-      name: '艾伯伦5E不全书',
-      loadSidebar: true,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md',
-      },
-      // 一打开网址，右侧舞台直接无缝加载这页感谢名单
-      homepage: '0-CHM第一页.htm',
-      subMaxLevel: 0
-    }
+window.$docsify = {
+    name: '艾伯伦5E不全书',
+    loadSidebar: true, // 开启侧边栏
+    // ⬇️ 删掉了 basePath，让它直接在当前根目录下寻找 _sidebar.md
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
+    homepage: '0-CHM第一页.htm', // 保持你刚刚对齐成功的 .htm 后缀
+    subMaxLevel: 0
+  }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
