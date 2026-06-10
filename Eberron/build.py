@@ -169,9 +169,6 @@ html_template = f"""<!DOCTYPE html>
             }});
         }});
 
-        document.querySelectorAll('#sidebar > ul > li.folder').forEach(folder => {{
-            folder.classList.add('open');
-        }});
     </script>
 </body>
 </html>
