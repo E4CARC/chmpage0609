@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凯博尔：世界之中的世界</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:Arial;
+	color:#C00000;
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 6 字符1";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:130%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:样式4;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:#5B9BD5;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+span.20
+	{mso-style-name:"样式2 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:样式2;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.21, li.21, div.21
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"样式2 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a1, li.a1, div.a1
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a2, li.a2, div.a2
+	{mso-style-name:边栏正文内容;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.30
+	{mso-style-name:"样式3 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:样式3;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.31, li.31, div.31
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"样式3 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.a3
+	{mso-style-name:"译注 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:译注;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	color:#548235;
+	mso-themecolor:accent6;
+	mso-themeshade:191;
+	mso-style-textfill-fill-color:#548235;
+	mso-style-textfill-fill-themecolor:accent6;
+	mso-style-textfill-fill-alpha:100.0%;
+	mso-style-textfill-fill-colortransforms:lumm=75000;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;}
+p.a4, li.a4, div.a4
+	{mso-style-name:译注;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"译注 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Arial;
+	color:#548235;
+	mso-themecolor:accent6;
+	mso-themeshade:191;
+	mso-style-textfill-fill-color:#548235;
+	mso-style-textfill-fill-themecolor:accent6;
+	mso-style-textfill-fill-alpha:100.0%;
+	mso-style-textfill-fill-colortransforms:lumm=75000;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.61
+	{mso-style-name:"标题 6 字符1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("5-凯博尔世界之中的世界.files/header.html") fs;
+	mso-footnote-continuation-separator:url("5-凯博尔世界之中的世界.files/header.html") fcs;
+	mso-endnote-separator:url("5-凯博尔世界之中的世界.files/header.html") es;
+	mso-endnote-continuation-separator:url("5-凯博尔世界之中的世界.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+<p class="MsoNormal"><span lang="EN-US" style="color:#538135;mso-themecolor:accent6;
+mso-themeshade:191;mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="图片_x0020_4" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:489.75pt;height:189pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="5-凯博尔世界之中的世界.files/image004.jpg" o:title=""/>
+</v:shape><![endif]--><?if !vml?><img height="252" src="5-凯博尔世界之中的世界.files/image004.jpg" v:shapes="图片_x0020_4" width="653"/><?endif?></span><span lang="EN-US" style="color:#538135;mso-themecolor:accent6;mso-themeshade:191"><o:p></o:p></span></p>
+<h1><span class="GramE"><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:
+"Arial Black";mso-hansi-font-family:"Arial Black"'>凯</span></span><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:"Arial Black";
+mso-hansi-font-family:"Arial Black"'>博尔：世界之中的世界</span><span lang="EN-US">Khyber:
+The Worlds within the World</span></h1>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">冒险者们不必超越艾伯伦就可以找到奇诡而又魔幻的领域。在艾伯伦的地表下有一层由石头和土壤构成的地层，那些深入地下的人可能会发现天然洞穴、<span class="GramE">达坎地精的</span>遗迹，或者索尔乌达</span><span lang="EN-US">(Sol <span class="SpellE">Udar</span>)</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">矮人的王国。但<span class="GramE">凯博尔绝不仅仅是岩石和泥土。黑暗的地底中包含了无数的半位面——在这些空间中，影响物质世界的规则并不适用。这些半位面是凯博尔最为反常的地方</span>：邪魔们在其间重塑，异变魔被囚禁在他们自己的位面层中（类似于艾伯伦的其他位面的层）。这些半位面可以是致命的，但它们也可以为探索和发现地表以下令人惊奇的新世界提供意想不到的机会。第</span><span lang="EN-US">4</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">章的</span><span lang="EN-US">"</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">地底世界</span><span lang="EN-US">"</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">提供了探索<span class="GramE">凯</span>博尔上层区域的方向；本节则概述了冒险者在深入探索时可能遇到的半位面。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">何为半位面？</span><span lang="EN-US">What Are <span class="SpellE">Demiplanes</span>?</span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">凯</span></span><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">博尔的半位面有点像其他位面的层的概念。<span class="GramE">每个半</span>位面都是有限的空间，尽管它可以像房子一样小，也可以像一个国家一样大。它的边界可能由不可逾越的物理屏障或力场墙来界定，也可能是一个可以环绕的空间——如果你在一个方向上走得足够远，你会发现绕回了起点。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">到达一个半位面总是需要一个传送门。在某些情况下，半位面旅行还需要进行仪式或者处于位面相交状态下，并且有些传送<span class="GramE">门可能</span>无法通过，它们被<span class="GramE">龙或者护门</span>者德鲁伊的远古禁锢所封印。然而，许多传送门虽然是活跃的，但却几乎无法被感知到；在隧道中穿行的冒险者可能会在不知不觉中就通过了一个<span class="GramE">前往铁境</span></span><span lang="EN-US">(<span class="SpellE">Ironlands</span>)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">的传送门。传送门是静态的，固定在一个地方，只要传送门保持开放，冒险者总是可以通过回溯他们的脚印，返回来处。半位面也可能有两个或更多的传送门，每个传送门都能通往主物质位面的任何地方。腐化者迪恩</span><span lang="EN-US">(<span class="SpellE">Dyrrn</span>)</span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">的王国在阴影湿地<span class="GramE">和铁根山脉</span>下有传送门，而达贡的<span class="GramE">地精氏族凯</span>斥沙拉特</span><span lang="EN-US">(<span class="SpellE">kech</span> <span class="SpellE">Shaarat</span>)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">和恶魔荒原的<span class="GramE">加什卡拉兽人</span></span><span lang="EN-US">(<span class="SpellE">Ghaash</span></span><span class="GramE"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">’</span></span><span lang="EN-US">kala)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">都使用了<span class="GramE">与铁境相连</span>的传送门。因此，半位面可以实现长距离的快速旅行；冒险者可以<span class="GramE">进入夸巴拉下</span>面的半位面，大约走了一英里后从隧道中出来的时候，就已经抵达了布鲁兰。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">半位面与艾伯伦的</span><span lang="EN-US">13</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">个位面有很多共同之处。自然法则可能在其间并不适用，时间、空间或其他元素可能以反常的方式表现出来。一个半位面可以拥有另一个位面的一些属性，比如费尼亚的灼热明光</span><span lang="EN-US">(Burning Bright)</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">特性或拉玛尼亚的原初之物</span><span lang="EN-US">(Primordial
+Matter)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">特性。但所有半位面无法划归到一个统一的风格；<span class="GramE">每个半</span>位面都是完全独特的。曾有智者说，这些半位面是<span class="GramE">凯</span>博尔的梦境。其他人则认为，半位面是未完成的念头——现实世界的早期草图或是未完成位面的雏形。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">虽然半位的规模通常是有限的，但它们的构造并不遵循固定的方式。你有可能在艾伯伦地下一英里处发现一个看似通向天空的山谷</span><span lang="EN-US">......</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">但那并不是艾伯伦的天空</span><span lang="EN-US">! </span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">与位面不同，<span class="GramE">凯</span>博尔的半位面不包含任何艾伯伦的天体——那里的天空中可能有月亮、星环，甚至太阳，但它们将会是完全前所未见的。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">尽管没有一个共同的风格将所有半位面归类，但却有三个常见的半位面类别：心、狱、影。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><b><span lang="EN-US"><o:p> </o:p></span></b></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">心之半位面</span><span lang="EN-US">Heart <span class="SpellE">Demiplanes</span></span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">霸主——拉克·塔尔赫什</span><span lang="EN-US">(<span class="SpellE">Rak</span> <span class="SpellE">Tulkhesh</span>)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">、苏·卡特什</span><span lang="EN-US">(Sul <span class="SpellE">Khatesh</span>)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">以及其他——据说是<span class="GramE">凯</span>博尔的第一批子嗣。他们是世间初<span class="GramE">诞</span>的邪魔，并且每个霸主都带来了一大批低阶恶魔。当一个邪魔死亡时，它的魂髓会回到<span class="GramE">凯</span>博尔。每个都被束缚在<span class="GramE">凯</span>博尔的一个特定的半位面中转生——霸主之心。这也是霸主们无法被永久消灭的原因之一；每一个霸主都是<span class="GramE">凯</span>博<span class="GramE">尔本身</span>架构的一部分，而在艾伯伦遇到的霸主只是其本质的投影。为了打败霸主，恶魔时代的英雄们<span class="GramE">用银焰束缚</span>住他们不朽的魂髓，以防止他们回到自己的心之半位面进行重塑。这实质上相当于切断了大脑与心脏的联系——但心之半位面仍然存在。霸主的低阶仆从——<span class="GramE">邪兽鬼和</span>其他恶魔爪牙——会在霸主们重塑时返回心之半位面，一旦霸主的束缚被打破，它将在其心之领域里恢复全部的力量。</span></p>
+<p class="MsoNormal"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">心之半位面相对较小，大约相当于一个大型城市的大小。每一个在外观和特性上都映射了它所属的霸主。就像囚禁一个霸主灵魂的龙晶碎片可以影响一个地区一样，通往心之半位面的传送门往往也会影响到周围的地区；被认为是通往撒法拉斯的显能区域可能是通往苦难之盾</span><span lang="EN-US">(Bitter Shield)</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">的门户。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">虽然霸主并没有有意识地显现在他们的心之领域中，但他们的魂<span class="GramE">髓仍然</span>充满到其间。心之半位面通常居住着许多受霸主约束的<span class="GramE">低阶魔物</span>。<span class="GramE">许多魔物在</span>他们的霸主获得自由之前都不迫切渴望回到艾伯伦，而另一些则<span class="GramE">在砂主中</span>服务，把心之半位面当作一个避难之地。下面将介绍少数几个心之半位面，但总数至少有三十个——每位霸主皆有。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h4><span style="font-family:等线;mso-ascii-font-family:Arial;mso-hansi-font-family:
+Arial">苦难之盾：拉克·塔尔赫什</span><span lang="EN-US">The Bitter Shield: <span class="SpellE">Rak</span> <span class="SpellE">Tulkhesh</span></span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">拉克·塔尔赫什的心之领域是一座深红色的堡垒，砖石被鲜血浸透，城墙上钉满了生锈的铁刺。在堡垒的底层周围，<span class="GramE">邪兽鬼和</span>其他魔鬼进行着永无止境地战斗，这些无谓的搏杀反映了他们主人的嗜血本性。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><b><i><span lang="EN-US">“</span></i></b><b><i><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">影剑</span><span lang="EN-US">”</span></i></b><b><i><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">摩达克什</span><span class="SpellE"><span lang="EN-US">Mordakhesh</span></span><span lang="EN-US"> the <span class="SpellE">Shadowsword</span></span></i></b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">经常在他实施一个又一个的阴谋之间回到苦难之盾，并被誉为堡垒的主宰。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">苦难之<span class="GramE">盾拥有</span>撒法拉斯的<b><i>难<span class="GramE">遏</span>暴怒</i></b></span><b><i><span lang="EN-US">Unquenchable Fury</span></i></b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">和<b><i>血<span class="GramE">戮</span></i></b></span><b><i><span lang="EN-US">Bloodletting</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">特性。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h4><span style="font-family:等线;mso-ascii-font-family:Arial;mso-hansi-font-family:
+Arial">影蔽之塔：苏·卡特什</span><span lang="EN-US">The Tower of Shadows: Sul <span class="SpellE">Khatesh</span></span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">苏·卡特什在心之半位面是一座由绘有银纹的黑色砖石建成的高塔。它在三轮陌生的新月的浮光下熠熠生辉。此处是永夜之地，秘密守护者的仆从们一边对着月亮咏唱颂歌，一边进行着血腥的祭祀，并在地上描画出古老的符文。塔楼里有一个关于黑暗秘密的图书馆，旁边还有一个缮写室，恶魔们在那里写下了将会交给凡间术士的阴影之书。在恶魔荒原的阿什塔卡拉</span><span lang="EN-US">(<span class="SpellE">Ashtakala</span>)</span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">城下有一个通往影蔽之塔的入口，当<span class="GramE">邪兽鬼赫克图拉</span></span><span lang="EN-US">(<span class="SpellE">Hektula</span>)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">不照看阿什塔卡拉的图书馆时，她就住在这里。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">影蔽之<span class="GramE">塔拥有</span>西拉尼亚的<b><i>通译寰宇</i></b></span><b><i><span lang="EN-US">Universal
+Understanding</span></i></b><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">特性和<span class="GramE">玛</span>伯尔的<b><i>永恒阴影</i></b></span><b><i><span lang="EN-US">Eternal Shadows</span></i></b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">特性。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">狱之半位面</span><span lang="EN-US">Prison <span class="SpellE">Demiplanes</span></span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">当某些事物被描述为</span><b><span lang="EN-US">"</span></b><b><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">困在<span class="GramE">凯</span>博尔</span><span lang="EN-US">trapped in Khyber"</span></b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">时，通常意味着它被困在<span class="GramE">凯</span>博尔的某个半位面。期中最臭名昭著的<span class="GramE">凯</span>博尔囚徒就是异变魔</span><span lang="EN-US">(<span class="SpellE">daelkyr</span>)</span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">，但也可能有其他人——要么是不朽的灵魂，要么是被他们的敌人困在半位面的凡间生灵。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">腐化者迪恩</span><span class="SpellE"><span lang="EN-US">Dyrrn</span></span></b><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">栖身于<span class="GramE"><b>要害之殿</b></span></span><b><span lang="EN-US">Palace of Sinew</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">，<b>贝拉希拉</b></span><span class="SpellE"><b><span lang="EN-US">Belashyrra</span></b></span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">居于<b>无障之目城堡</b></span><b><span lang="EN-US">Citadel of Lidless Eyes</span></b><span lang="EN-US">(</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">这两个地方在《艾伯伦</span><span lang="EN-US">: </span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">从终末战争中崛起》中有描述</span><span lang="EN-US">)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。<b>瓦尔拉拉</b></span><span class="SpellE"><b><span lang="EN-US">Valaara</span></b></span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">被束缚在最深的巢穴中，本书第</span><span lang="EN-US">8</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">章有描述。据传，<b>异变<span class="GramE">魔</span>奥拉斯克</b></span><span class="SpellE"><b><span lang="EN-US">Orlassk</span></b></span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">住在一个雕刻成巨大的石像鬼的堡垒里，石像鬼在<span class="GramE">凯</span>博尔的隧洞中四处游荡；也许是石像<span class="GramE">鬼存在</span>于奥拉斯克的狱之半位面，也可能是这个巨大的生物内容纳有一个通往其牢狱的传送门。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">在处理狱之半位面时，</span><span lang="EN-US">DM</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">将不得不决定传送门的限制。例如在<span class="GramE">异变魔半位面</span>，异变<span class="GramE">魔</span>不能离开它们，但其他生物可以自由进出。因此，迪恩的爪牙们可以从<span class="GramE">要害之殿蜂拥而出</span>，但<span class="GramE">只要护门者</span>的封印依旧保持完整，迪恩本人就无法离开。被束缚的本质和异变魔的强大力量使得他们以自己想象中的图景塑造了他们的半位面，但较弱的生物只会被困在更为传统的监狱里。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">影之半位面</span><span lang="EN-US">Shadow <span class="SpellE">Demiplanes</span></span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">与心之半位面和<span class="GramE">狱之</span>半位面不同，影之半位面没有明确的用途。它们不是监狱或邪恶的堡垒，而是世界的奇异映射。就像<span class="GramE">瑟</span>瑞奥特一样，它们通常违背了自然逻辑——而这也往往赋予了它们巨大的价值。<span class="GramE">在铁根山脉</span>的地底之下，矮人发现了一个有着结满宝石树木的领域。在内阳谷</span><span lang="EN-US">(Vale of the Inner Sun)</span><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">，生物则不会随着时间老去。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">许多智者称这些为</span><span lang="EN-US"> "</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">影之半位面</span><span lang="EN-US">"</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">，因为这些似乎是其他位面的影子；<span class="GramE"><b>卡哈尔</b></span></span><span class="SpellE"><b><span lang="EN-US">Khaar</span></b></span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">的深渊森林是拉玛尼亚的映射，<span class="GramE">而铁境与</span>撒法拉斯有一些相似之处。但事实上，<span class="GramE">凯</span>博尔的半位面与其他位面没有任何联系，它们也没有受到艾伯伦的自然影响或西伯瑞亚的星环之光的触动。也许交织在这些半位面中的核心是<span class="GramE">凯</span>博尔梦境的回响，或者是对可能发生的事情的暗示</span><span lang="EN-US">......</span><span class="GramE"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">更或者</span></span><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">它们的相似性只是莫名其妙的巧合。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">影之半位面可能拥有一些可被使用或者收集的重要资源——但这些区域总是会有一个恶毒的方面。邪魔在这里很常见，甚至居住在那里的凡间生物也很邪恶。在影之半位面停留过久通常会招致腐化。有无数的影之半位面，有些很小，有些则很大；这里提到的只是几个例子。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h4><span style="font-family:等线;mso-ascii-font-family:Arial;mso-hansi-font-family:
+Arial">卡哈尔的深渊森林</span><span lang="EN-US">The Abyssal Forest of <span class="SpellE">Khaar</span></span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">初看之下，这似乎是一片原始森林，但仔细探看，会发现它充满了恐怖。这个半位面被充满鲜血的深红色藤蔓所缠绕。这里充斥着怪兽、扭曲的野兽，它们并不像异变魔的畸形动物那样怪异，但却同样致命；即使是最迷人的鸣禽也是残忍的食肉者。森林中奇怪的植物可以用来制作药水或致命的毒药，对于那些敢于直面其恐怖的人来说，这是宝贵的资源。在卡哈尔的深渊森林中，任何对毒素伤害没有天然免疫的生物都会变得容易受到毒素伤害，并且在对毒素的豁免检定上处于劣势。</span></p>
+<p class="MsoNormal" style="tab-stops:326.4pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<h4><span class="GramE"><span style="font-family:等线;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial">铁境</span></span><span lang="EN-US">The <span class="SpellE">Ironlands</span><span style="mso-tab-count:1"> </span></span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">这个区域的风景都是由金属形成。精金树长出锋利的树叶，<span class="GramE">带有钢锋的</span>草叶足以划破柔软的鞋子。这个拥有撒法拉斯的血<span class="GramE">戮</span>特性的半位面，是一群魔鬼和恶魔的家园，他们在此进行着他们自己无尽的战争。这些恶魔钟爱战斗和欺压凡人，但幸运的是，他们无法离开自己的领域。恶魔荒原的<b>加什卡拉</b></span><span class="SpellE"><b><span lang="EN-US">Ghaash'kala</span></b></span><span class="GramE"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">兽人袭击</span></span><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">了铁境，从恶魔战士那里掠夺武器。<span class="GramE"><b>凯</b></span><b>斥沙拉特</b></span><span class="SpellE"><b><span lang="EN-US">Kech</span></b></span><b><span lang="EN-US"> <span class="SpellE">Shaarat</span></span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">（见第</span><span lang="EN-US">4</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">章）将他们的深层宝库扩展到了铁境；经过许多个世纪，这些<u>达尔</u><span class="a3"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">注①</span></span>与某个恶魔部族建立了联盟，使他们能够保住这片领地。至于这个联盟的基础，以及沙拉<span class="GramE">特</span>人能否以其他方式利用这个联盟，则由</span><span lang="EN-US">DM</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">来决定。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="a4"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri">注</span><span lang="EN-US">1</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri">：原文</span><span class="SpellE"><span lang="EN-US">dar</span></span><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:
+Calibri">为<span class="GramE">地精语</span>，意为人民，是对<span class="GramE">达坎地精的</span>统称</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h4><span style="font-family:等线;mso-ascii-font-family:Arial;mso-hansi-font-family:
+Arial">内阳谷</span><span lang="EN-US">The Vale of the Inner Sun</span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">黄泉巨龙会的信徒普遍相信，在凯博尔内有一个天堂，一个没有痛苦和死亡的地方。内阳谷确实存在，它拥有瑞西亚<span class="GramE">的<b>寂止肉身</b></span></span><b><span lang="EN-US">Stillness of Flesh</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">特性<span class="a3"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">注②</span></span>和伊瑞安的<b>生命之光</b></span><b><span lang="EN-US">Light of
+Life</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">特性<span class="a3"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">注③</span></span>。然而，这种不朽是有代价的；长期居住在谷地的生物会慢慢变异，最终变成极不寻常的畸形。谷地的居民——有些人已经在那里生活了几个世纪——对外来者没有好感，造访之人必须证明自己的价值才有资格沐浴在内阳的虹彩之光中。</span></p>
+<p class="a4"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri">注</span><span lang="EN-US">2</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri">：第五章，瑞西亚：冰封之原有介绍</span></p>
+<p class="a4"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri">注</span><span lang="EN-US">3</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri">：第五章，伊瑞安：永恒黎明有介绍</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background:#E7E6E6;mso-background-themecolor:background2;border-collapse:
+ collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:none;mso-border-insidev:none">
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
+<td style="width:414.8pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="553">
+<p class="MsoNormal"><b><span style="font-family:等线;mso-ascii-font-family:Calibri;
+  mso-hansi-font-family:Calibri">边栏：欧瑞恩家族与半位面</span><span lang="EN-US"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">半位面可以作为通往远方的虫洞——一种极具价值的货运和客运手段！<span class="GramE">欧瑞恩</span>家族已经发现了一个这样的通道；它在通路城（安黛尔）和瓦纳城（<span class="GramE">埃鲁登</span>原野）这两个城市的会馆都建在连接到一个微小、安全的影之半位面的传送门之上。这使得欧瑞恩可以在几分钟之内在这两个城市之间移动。然而，这两座城市已经很接近了，而且通达率很好，所以这一直是一种秘密资源，而不被广泛地应用于商业用途。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">然而，近来的终<span class="GramE">末战争</span>和<b><i>悲叹之日</i></b></span><b><i><span lang="EN-US" style="color:black;mso-color-alt:windowtext">the Mourning</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">扰乱<span class="GramE">了欧瑞恩</span>家族的许多贸易路线，飞艇的发展正在威胁着该家族在陆路旅行中的主导地位。为了重新获得安全感，夸提·</span><span lang="EN-US" style="color:black;mso-color-alt:windowtext">D</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">·欧瑞恩</span><span lang="EN-US" style="color:black;mso-color-alt:windowtext">(<span class="SpellE">Kwanti</span>
+<span class="SpellE">d<span class="GramE">’</span>Orien</span>)</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">男爵正在积极寻找新的半位面通道。他梦想着找到一条可以安全、迅速穿越哀伤故地的路线，这条路线可以成为欧瑞恩家族的商贸路线，甚至可以承载一列闪电列车。<span class="GramE">但夸提</span>并不知道半位面有多危险，在他的努力下，他将很可能打开那些本应紧闭的大门。</span><i style="mso-bidi-font-style:normal"><span lang="EN-US"><o:p></o:p></span></i></p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+</div>
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '凯博尔：世界之中的世界'}, '*');
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>填补其中的空白</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"华康楷体 Std W5";
+	panose-1:3 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:134;
+	mso-generic-font-family:script;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 407858424 18 0 262157 0;}
+@font-face
+	{font-family:"\@华康楷体 Std W5";
+	mso-font-charset:134;
+	mso-generic-font-family:script;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 407858424 18 0 262157 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:宋体;
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:.5gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:0cm;
+	mso-para-margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:1.0gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	color:#822F18;
+	font-weight:bold;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 6 字符1";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:130%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	mso-char-indent-count:2.0;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.MsoIntenseEmphasis
+	{mso-style-priority:21;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:#4472C4;
+	mso-themecolor:accent1;
+	font-style:italic;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+p.30, li.30, div.30
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a1, li.a1, div.a1
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.20, li.20, div.20
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:样式4;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:#5B9BD5;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.200
+	{mso-style-name:20;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.21
+	{mso-style-name:21;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.22
+	{mso-style-name:22;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.61
+	{mso-style-name:"标题 6 字符1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("10-填补其中的空白.files/header.html") fs;
+	mso-footnote-continuation-separator:url("10-填补其中的空白.files/header.html") fcs;
+	mso-endnote-separator:url("10-填补其中的空白.files/header.html") es;
+	mso-endnote-continuation-separator:url("10-填补其中的空白.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>填补其中的空白</span><span lang="EN-US">Filling the Space
+Between<o:p></o:p></span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">在上述的例子中，你可以采用快进的形式，只用几句话描述从</span><span lang="EN-US">A</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">点到</span><span lang="EN-US">B</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">点的过程，阐述这片森林有多令人感到毛骨悚然是一件容易的事，并且这些强盗足够聪明，会避开冒险队伍。但与此同时，这片森林的确十分诡异，而强盗的存在是一个设定的已知元素，你希望让玩家们意识到自己经历了一段重要的旅程。可以考虑以下选项，来让玩家（和他们的角色）参与到冒险中来。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h3 style="margin-top:7.8pt"><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">享受旅行</span><span lang="EN-US">Enjoy the
+Ride<o:p></o:p></span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">旅行本身也有可能成为冒险。在本质上，《霍比特人</span><span lang="EN-US">The Hobbit</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">》是一个讲述一队冒险者<span class="GramE">深入龙巢</span>的故事</span><span lang="EN-US">……</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">但故事的绝大多数内容是关于他们前往地牢的旅程，同样的，你的《杜</span><span lang="EN-US">·</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">阿祖尔之墓</span><span lang="EN-US">Tomb of <span class="SpellE">Dol</span> Azur</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">》或许是游戏的最终目标，但你可能会需要先进行几个游戏阶段才能真正到达那里，与其在随机遭遇上浪费时间，不如专注于令每一步都变得有趣而富有意义。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="margin-top:15.6pt">意想不到的挑战<span lang="EN-US">Unexpectedly Challenging
+Challenges<o:p></o:p></span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">对于经验丰富的冒险者们而言，一般的强盗团伙不应构成威胁，但假如这片幽深森林里的强盗并不一般呢？如果每当他们被杀死时就会复活</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">而唯一击败他们的方法时找到并摧毁赋予他们这种能力的神器，那么现在该怎么办呢？或许冒险者们有办法制服这些强盗，但这实际上是一个道德困境，比如所谓的强盗实际上是<span class="GramE">一些罗</span>宾汉式的英雄，他们从富人手里抢夺财物是为了给一些至关重要的事业筹集资金，例如购买药物来结束本地的一场瘟疫呢？如果以当地人的生活标准来看，这些冒险者<span class="GramE">们相当</span>的富有，他们是否愿意以某种方式提供帮助呢？</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="margin-top:15.6pt">古代文物<span lang="EN-US">Ancient Artifacts<o:p></o:p></span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">如果你们身处一个偏远之地，冒险者们也许会发现一个古代文明的遗迹或残留物</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">这可能是<span class="GramE">由达坎</span></span><span class="SpellE"><span lang="EN-US">Dhakaani</span></span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">地精、巨人时代的龙、或甚至是由恶魔时代的羽蛇或邪魔们所建造的东西。这一发现可能纯粹是一个有趣的奇观</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">一尊不可摧毁、不可移动的羽蛇雕像悬浮在一个神秘的铭文正<span class="GramE">上方<span lang="EN-US" style='font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>——</span></span>这一发现可能在战役更晚些时候变得重要，又或者它可能已经非常强大和危险</span><span lang="EN-US">……</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">甚至可能是这片土地被人所回避的原因。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="margin-top:15.6pt"><span lang="EN-US">“</span>酒吧<span lang="EN-US">”</span>的麻烦<span lang="EN-US">Trouble at the Bar<o:p></o:p></span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">冒险者们找到了一个旅馆或一个<span class="GramE">被友好</span>旅行者们使用的营地，他们热情地欢迎冒险者在这里进行<span class="GramE">一</span>次长休。但麻烦也随之而来，也许是一起谋杀案；也许是一位客人指责另一位客人是一个变节的战犯</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">并且这些罪行影响了其中一个玩家角色；也许是一个商人正在出售一些看起来棒到令人难以置信的物品，你能信任这些来自旅行者的礼物吗？</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="margin-top:15.6pt">显能区域<span lang="EN-US">Manifest Zones<o:p></o:p></span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">在艾伯伦的几乎任何地方，添加一个显能区域都会给一个原本平凡的地区带来意想不到的扭曲变化，没有人会深入幽深森林的核心区域</span><span lang="EN-US">……</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">这也就是为什么从未有人意识到这座坟墓位于一个通向撒法拉斯</span><span class="SpellE"><span lang="EN-US">Shavarath</span></span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">的显能区域中！为了到达那里，冒险者们必须以某种方式穿越交战中的天使与恶魔的战线。又或者这座坟墓位于一个通向杜鲁尔</span><span class="SpellE"><span lang="EN-US">Dolurrh</span></span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">的显能区域，冒险者们必须直面过去的幽灵或是克服沉重的倦怠感才能继续前进。意外显能区域表提供了一些灵感，以<span class="GramE">启发您</span>的创意：</span><span lang="EN-US"><o:p></o:p></span></p>
+<h5><span style="font-family:黑体;mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">意外显能区域表</span><span lang="EN-US"><o:p></o:p></span></h5>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:none">
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+<td style="width:27.95pt;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><b><span lang="EN-US">d12<o:p></o:p></span></b></p>
+</td>
+<td style="width:386.85pt;padding:0cm 5.4pt 0cm 5.4pt" width="516">
+<p class="MsoNormal"><b><span style="font-family:等线;mso-ascii-font-family:Calibri;
+  mso-hansi-font-family:Calibri">显能区域</span><span lang="EN-US"><o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1">
+<td style="width:27.95pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">1</span><span lang="EN-US"><o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><span class="GramE"><b><span style='font-family:"华康楷体 Std W5";
+  color:black;mso-color-alt:windowtext'>达安维</span></b></span><span class="SpellE"><b><span lang="EN-US" style='font-family:"华康楷体 Std W5";color:black;
+  mso-color-alt:windowtext'>Daanvi</span></b></span><b><span style='font-family:
+  "华康楷体 Std W5";color:black;mso-color-alt:windowtext'>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">一个<span class="GramE">达安维</span></span><span class="SpellE"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">Daanvi</span></span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">魔鬼告诉团队，穿越这个区域需要支付一些通行费用</span><span lang="EN-US" style="color:black;mso-color-alt:windowtext">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">而他们已经因进入了这片区域而产生了通行费，每位冒险者需要交出身上一件对于他们而言具有个人价值的物品，打败魔鬼是避免支付费用的方式之一，但这样做可能会在未来招致来自<span class="GramE">达安维的</span>起诉。</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2">
+<td style="width:27.95pt;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US">2<o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><b><span style='font-family:"华康楷体 Std W5"'>杜鲁尔<span class="SpellE"><span lang="EN-US">Dolurrh</span></span>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri">冒险者们听到了带着未竟事业死在这里的人们的幽灵之声</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri">从<span class="GramE">达坎<span class="SpellE"><span lang="EN-US" style='font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>Dhakaani</span></span>地精</span>和前</span><span lang="EN-US">-</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+  mso-hansi-font-family:Calibri">伽利法</span><span lang="EN-US">pre-<span class="SpellE">Galifar</span></span><span style="font-family:等线;mso-ascii-font-family:
+  Calibri;mso-hansi-font-family:Calibri">人到<span class="GramE">最近的最近的</span>死者，例如在终<span class="GramE">末战争</span>中死去的一个带有未传递的关键信息的间谍。冒险者们会去尝试解决这些未了的债务吗？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3">
+<td style="width:27.95pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">3</span><span lang="EN-US"><o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><span class="GramE"><b><span style='font-family:"华康楷体 Std W5";
+  color:black;mso-color-alt:windowtext'>费尼亚</span></b></span><span class="SpellE"><b><span lang="EN-US" style='font-family:"华康楷体 Std W5";color:black;
+  mso-color-alt:windowtext'>Fernia</span></b></span><b><span style='font-family:
+  "华康楷体 Std W5";color:black;mso-color-alt:windowtext'>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">这片荒野着火了，植被会永远燃烧而不被消耗，但火焰依然产生了致命的热量，火元素不安分地游荡着。<span class="GramE">费尼亚</span>的智慧居民是否会在火中显现？他们会对冒险者提出什么要求？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4">
+<td style="width:27.95pt;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US">4<o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><b><span style='font-family:"华康楷体 Std W5"'>伊瑞安<span lang="EN-US">Irian</span>。</span></b><span style="font-family:等线;mso-ascii-font-family:
+  Calibri;mso-hansi-font-family:Calibri">一个孤独的不死隐士居于此地，靠这里的正能量维持生命。这个隐士有多大的岁数？他又掌握了哪些秘密？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5">
+<td style="width:27.95pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">5</span><span lang="EN-US"><o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><span class="GramE"><b><span style='font-family:"华康楷体 Std W5";
+  color:black;mso-color-alt:windowtext'>奇斯瑞</span></b></span><span class="SpellE"><b><span lang="EN-US" style='font-family:"华康楷体 Std W5";color:black;
+  mso-color-alt:windowtext'>Kythri</span></b></span><b><span style='font-family:
+  "华康楷体 Std W5";color:black;mso-color-alt:windowtext'>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">冒险者们遇到了一处史拉<span class="GramE">蟾</span></span><span class="SpellE"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">slaad</span></span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">前哨站；如果你有《探秘艾伯伦</span><span lang="EN-US" style="color:black;mso-color-alt:windowtext">Exploring <span class="SpellE">Eberron</span></span><span style="font-family:等线;mso-ascii-font-family:
+  Calibri;mso-hansi-font-family:Calibri;color:black;mso-color-alt:windowtext">》手册，请在第</span><span lang="EN-US" style="color:black;mso-color-alt:windowtext">5</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">章的史拉<span class="GramE">蟾</span>文化表</span><span class="SpellE"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">Slaad</span></span><span lang="EN-US" style="color:black;mso-color-alt:windowtext"> Cultures</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">上投掷一次。史拉<span class="GramE">蟾</span>是否坚持让冒险者享受它们的款待？又或者他们对外来者入侵他们的领地而感到愤怒？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6">
+<td style="width:27.95pt;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US">6<o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><b><span style='font-family:"华康楷体 Std W5"'>拉玛尼亚<span class="SpellE"><span lang="EN-US">Lamannia</span></span>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri">一头巨大的野兽挡住了冒险者们的去路，你的队伍将如何回避或安抚这只巨兽呢？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:7">
+<td style="width:27.95pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">7</span><span lang="EN-US"><o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><span class="GramE"><b><span style='font-family:"华康楷体 Std W5";
+  color:black;mso-color-alt:windowtext'>玛</span></b></span><b><span style='font-family:"华康楷体 Std W5";color:black;mso-color-alt:windowtext'>博尔<span class="SpellE"><span lang="EN-US">Mabar</span></span>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">冒险者们发现了一个只有栩栩如生的骷髅占领的露营地或农场，这里是否有珍贵的宝藏或秘密可以被找到</span><span lang="EN-US" style="color:black;mso-color-alt:windowtext">……</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">又或者在这些脆弱的骷髅中还隐藏着更加危险的不死生物？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:8">
+<td style="width:27.95pt;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US">8<o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><b><span style='font-family:"华康楷体 Std W5"'>瑞西亚<span class="SpellE"><span lang="EN-US">Risia</span></span>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri">这片地区异常的寒冷，冒险者们必须抵御住致命的低温影响，他们是否会发现被永恒<span class="GramE">冰封于瑞西亚</span>冰川之下的生物？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:9">
+<td style="width:27.95pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">9</span><span lang="EN-US"><o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><b><span style='font-family:"华康楷体 Std W5";color:black;
+  mso-color-alt:windowtext'>撒法拉斯<span class="SpellE"><span lang="EN-US">Shavarath</span></span>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">一支天使军队正在与一群恶魔交战，而冒险者们必须安全地穿过这片争夺中的领地，他们是否有被征召入伍的风险？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:10">
+<td style="width:27.95pt;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US">10<o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><b><span style='font-family:"华康楷体 Std W5"'>西拉尼亚<span class="SpellE"><span lang="EN-US">Syrania</span></span>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri">冒险者们找到了通往无限集市</span><span lang="EN-US">Immeasurable Market</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri">的大门，但这是一扇单向通行门，一旦他们从门中穿过，他们该如何求购到返回的通行证？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:11">
+<td style="width:27.95pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US" style="color:black;mso-color-alt:windowtext">11</span><span lang="EN-US"><o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;background:#FFF2CC;mso-background-themecolor:
+  accent4;mso-background-themetint:51;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><span class="GramE"><b><span style='font-family:"华康楷体 Std W5";
+  color:black;mso-color-alt:windowtext'>瑟</span></b></span><b><span style='font-family:"华康楷体 Std W5";color:black;mso-color-alt:windowtext'>兰尼斯<span class="SpellE"><span lang="EN-US">Thelanis</span></span>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">一个或更多的树精试图与冒险者们交流，如果冒险者们表现粗鲁或直接威胁这些树精们，是否会出现一位妖精树人要求他们进行道歉？</span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:12;mso-yfti-lastrow:yes">
+<td style="width:27.95pt;padding:0cm 5.4pt 0cm 5.4pt" width="37">
+<p align="center" class="MsoNormal" style="text-align:center"><span lang="EN-US">12<o:p></o:p></span></p>
+</td>
+<td style="width:386.85pt;padding:0cm 5.4pt 0cm 5.4pt" valign="top" width="516">
+<p class="MsoNormal"><span class="GramE"><b><span style='font-family:"华康楷体 Std W5"'>瑟</span></b></span><b><span style='font-family:"华康楷体 Std W5"'>瑞奥特<span class="SpellE"><span lang="EN-US">Xoriat</span></span>。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri">冒险者们被困在了一个封闭的空间循环里，向前移动只会将他们带回到开始的地方，他们是否能想出一种新颖的方式来逃离这个异常空间呢？</span></p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal"><span lang="EN-US" style="color:white;mso-color-alt:windowtext;
+mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="图片_x0020_2" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:285.75pt;height:215.25pt;flip:x;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="10-填补其中的空白.files/image001.jpg" o:title=""/>
+</v:shape><![endif]--><?if !vml?><img height="287" src="10-填补其中的空白.files/image001.jpg" v:shapes="图片_x0020_2" width="381"/><?endif?></span><span lang="EN-US"><o:p></o:p></span></p>
+<h3 style="margin-top:7.8pt"><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">蒙太奇式旅行</span><span lang="EN-US">Travel By
+Montage<o:p></o:p></span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">上文中提出的建议可以成为一种设计一次令人难忘的旅途的有趣方式，然而，逐个演出这些场景亦需时间，如果这次冒险核心有一个强故事性驱动的情节，你可能并不想用太多的支线情景来淡化它。当你没有时间让一场与强盗的遭遇变得有趣，但又不想吧旅途的过程搪塞过去时，你会怎么做？一个我最喜欢的工具就是旅行蒙太奇。我会想出一些冒险者可能会在旅途中遇到的短小有趣的挑战，然后我会让玩家各自处理其中的一个情景，因此，假设这个队伍有一个游荡者、一个法师、一个战士和一个牧师，我可能会这样告诉他们：</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.55pt;mso-char-indent-count:2.0"><b><span style='font-family:"华康楷体 Std W5"'>游荡者：</span></b><span lang="EN-US">“</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">告诉我你如何帮助这支队伍在第一天规避来自强盗的袭击。</span><span lang="EN-US">”<o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.55pt;mso-char-indent-count:2.0"><b><span style='font-family:"华康楷体 Std W5"'>法师：</span></b><span lang="EN-US">“</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">你们受困于持续的暴风雨，到了第二天，你们的衣服湿透了，穿过这里的河流上的桥也被冲走了，如何使用你的魔法，来帮助队伍穿越这条河呢？</span><span lang="EN-US">”<o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.55pt;mso-char-indent-count:2.0"><b><span style='font-family:"华康楷体 Std W5"'>战士：</span></b><span lang="EN-US">“</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">这片森林比人类的文明还要古老，你敢确信你听到了风中从传来的鬼魂哭嚎，并看到有东西在阴影中移动。你以你的勇气著称</span><span lang="EN-US">……</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">在这次旅途中，有什么事情让你实际感到了害怕呢？</span><span lang="EN-US">”<o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.55pt;mso-char-indent-count:2.0"><b><span style='font-family:"华康楷体 Std W5"'>牧师：</span></b><span lang="EN-US">“</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">告诉我关于你在旅途最后一晚所做的梦。</span><span lang="EN-US">”<o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">这些情景让每个玩家都有了属于自己的一刻，并鼓励玩家思考旅程中对于他们而言的有趣的地方，当然，任何角色都可以想出如何渡河的方法，但是在这一次，是法师想出了点子</span><span lang="EN-US">……</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">并告诉我如何执行。根据玩家提出的想法，你可以将他们的答案融入到战役中，也许牧师的梦境会成为预言、那个吓唬战士的东西会意外地回来，又或者游荡者与强盗们的首领在他们的第一个行会里相处友好</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">如果是这样，那个领袖可以以更有趣的角色定位再次回归。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">或者，玩家们也可能只是拿这些情节来开玩笑：真正吓到战士的是<span class="GramE">看到看到</span>游荡者在吃东西或听到牧师在打鼾，而这里什么异常也没有！以上所有的假设指向于让玩家讲述他们想要的故事，如果他们想笑，这会是一次绝佳的机会。无论如何，目标是让玩家们想象这次旅行，并思考它会对他们的角色产生什么影响。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">如果你想增加更多的悬念，基于他们提出的每个解决方法，你可以要求一次能力检定来克服障碍：如果游荡者尝试与强盗们谈判，他们困难会需要进行一次魅力（欺瞒或游说）检定；如果法师使用魔法来穿越河流，你可以要求一次智力（奥秘）检定来确定其具体效果如何；你可以要求牧师进行一次感知（宗教）检定以获得他们在梦中窥得的灵感。进行以上操作时，<span class="GramE">请确保</span>已经考虑到了当出现坏的掷<span class="GramE">骰</span>结果时的后果，如果时间非常紧迫，那么它可能产生的唯一后果是队伍被拖延，否则，角色可能会增加一级力竭状态，或失去一些生命<span class="GramE">骰</span></span><span lang="EN-US">——</span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">他们通过了挑战，但旅途非常辛苦。你也可以给予玩家们一个选择：你<span class="GramE">想增长</span>一级力竭，还是使用两瓶生命药水？在这次悲惨的过河之旅中，你失去了一些物品</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">它们是什么？而你该如何应对？</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">无论你使用哪种方法或设置哪些挑战，蒙太奇的目标都是创造一个有趣的故事以帮助玩家们想象出他们的角色经历了一次怎样的旅行，只要玩家们享受这次经历，那么你就成功了！</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+</div>
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '填补其中的空白'}, '*');
+        }
+</script>
+</body>
+</html>

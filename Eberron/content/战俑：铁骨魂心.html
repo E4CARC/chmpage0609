@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>战俑：铁骨魂心</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	color:#C00000;
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:171%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:7.5pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+p.20, li.20, div.20
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.30, li.30, div.30
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("战俑：铁骨魂心.files/header.html") fs;
+	mso-footnote-continuation-separator:url("战俑：铁骨魂心.files/header.html") fcs;
+	mso-endnote-separator:url("战俑：铁骨魂心.files/header.html") es;
+	mso-endnote-continuation-separator:url("战俑：铁骨魂心.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:2031713159;
+	mso-list-template-ids:1763725364;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:21.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+<h1><span style='font-family:"微软雅黑",sans-serif'>战俑：<span class="GramE">铁骨魂心</span><span class="SpellE"><span lang="EN-US">Warforged</span></span><span lang="EN-US">: Steel
+and Soul</span></span></h1>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">作为一位战俑，你的身躯诞生于卡尼斯家族熔炉中。创造熔炉在金属和乌木的骨架上将根须状的肌肉织就，以炼金术溶液沐浴你的身躯，再以钢铁或硬化的皮革为你做成外皮。然后奇迹发生了：你获得了生命。你由木头和钢铁制作而成，但你却是鲜活的生命，你有自我意识，能切身感受到爱与愤怒。你有着与生俱来的使命感，战争的知识深深铭刻在你的脑中。但你并非一定要遵循创造者为你规划的道路。你有自由，有学习的能力。也许还有灵魂。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">作为战俑，你出于某个目的被创造出来</span><span style="font-family:宋体;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——那是什么？你如何找到新的目标并成为了一位冒险者？你希望从现在的生活中获得什么？你是否心系战俑族裔的命运，或是你和冒险伙伴比和自己战<span class="GramE">俑同胞</span>待在一起时感到更为亲切？</span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-no-proof:yes"><img height="513" id="_x0000_i1025" src="战俑：铁骨魂心.files/战俑：铁骨魂心307.png" width="382"/></span><span style="mso-spacerun:yes"> </span></span></p>
+<p class="10"><span style="font-family:等线">起源与目的</span><span lang="EN-US">Origin and
+Purpose</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">最初的战<span class="GramE">俑作为</span>战争兵器被制造出来。随着卡尼斯家族的技术越发精进，一开始简单的步兵被更加复杂的设计所取代：<span class="GramE">具有秘银外层</span>的轻捷斥候，强而有力的金刚，甚至操纵着术士力量的</span><span style="font-family:
+宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">“活体魔杖”。随着人们越来越习惯于这些活着<span class="GramE">的构装生物</span>，卡尼斯家族开始设计出具有各式各样天赋的民用战俑。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">作为战俑，你具有学习的能力，而你的背景和职业特性正能反映出这一点。如果你是一位战<span class="GramE">俑吟游</span>诗人，你是为了娱乐而创造出来，还是你出生时只是一台简单的工人战俑，但却发现自己有着特别的天赋？如果你是一位术士，你是背上设计<span class="GramE">作能够引导奥术</span>能量，还是你的魔法来自于一项设计之外的进化？你可以从以下选项中决定自己的起源，然后思考它和你如今的样子有着怎样的关联。</span></p>
+<p class="30"><span lang="EN-US"><span style="mso-spacerun:yes"> </span></span></p>
+<p class="30"><span style="font-family:等线">战地</span><span lang="EN-US">Battlefield</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">和大多数战俑一样，你被设计为在终<span class="GramE">末战争</span>中服役。你并没有选择自己的阵营；你被卖到五国之一的军队中，并开始工作。你从未被教导过去质疑这一角色</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——战争是你唯一所知的目的。<span class="GramE">一些战俑开始</span>对他们服役的国家产生爱国主义的归属感，进而蔑视他们所交战的敌人。其他<span class="GramE">一些战俑</span>则和他们一同服役的军官和士兵们产生了密切的感情，他们是在为这个“家庭”，而非国家而战斗。你又是如何呢？你曾经为哪个国家耳中？你认为自己是一个<span class="GramE">瑟</span>雷恩人还是赛尔人，还是你对那个买下你并将你扔到前线的国家毫无眷恋之情？</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:宋体">战俑们在</span></span><span style="font-family:宋体">终<span class="GramE">末战争</span>的最后三十年间服役。你服役了多长时间？你最为戏剧性的经历是什么？战斗是否给你留下了挥之不去的疤痕或伤痛，即使它们并未对你的角色造成规则上的影响？</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">对<span class="GramE">许多战俑</span>来说，职业能力翻译了你在战场上扮演的角色。作为一位战士，你可能是在先锋部队中奋战。作为游侠或游荡者，你可能被设计为一台斥候。一位战俑野蛮人的狂暴可能反应了一种</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">“战斗模式”——你并没有真的陷入愤怒，但你暂时提升了自己造成的伤害和抗性。随着时间推移而逐渐获得的职业能力可能反应了设计中当你释放自己全部潜能时的进化——对你来说是否如此，还是你发展出了设计之外的天赋？</span></p>
+<p class="30"><span style="font-family:等线">民间</span><span lang="EN-US">Civilian</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">在终<span class="GramE">末战争</span>的最后十年间，卡尼斯家族开始出售<span class="GramE">战俑给民间</span>组织。这并非十分普及的服务；一位农夫无法只是走到商店里然后将一台战俑带回家中。但你可以曾经为一个龙纹家族服务，为一个贵族家庭担任家教或保镖，或者甚至设计<span class="GramE">来作</span>为一个犯罪组织的执行者。这条道路提供了许多可能的背景和非同寻常的故事。如果你选择了贵族背景，这并不意味着你一定要有自己的贵族头衔</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——你可以作为一位深受信赖的贵族保镖，一直被视作这个家族的一份子。也许一位贵族将你作为他们的继子，这样的故事可能前所未有，但可能会是一个有趣的故事！如果你具有民间英雄背景，你可能是某个特定城镇的守护者，而你的英勇行径则广为流传。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">作为一台民间战俑，你的职业是反映了你最初的制造目的，还是你在之外找到了别的道路？比如说，你可能具有智者背景作为你原本是一位家教或研究者的设定。你并未被制造为一位法师战俑</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——但在你的职业过程中，你开始逐渐掌握了魔法的奥秘，远远超出你的创造者希望的程度。在战场上服役的<span class="GramE">战俑们在</span>战争结束之后被迫开始寻找新的生活。而你并非为战争而生，终<span class="GramE">末战争</span>的结束对你是否有着大的影响？王座堡协约解除了你任何形式的从属关系，但你是否仍然感到对你服务的家族或城镇的归属感？你是否对一个国家有过忠诚，或者你的世界观一直都由和你一同工作的人们塑造？</span></p>
+<p class="30"><span style="font-family:等线">专用还是独特？</span><span lang="EN-US">Specialized
+or Unique</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">战场上的战俑大部分是批量生产。但仍然有许多小批次的实验<span class="GramE">性战俑</span>，使用了特别的设计或实验性的技术。也许你的战俑游荡者是一支从未部署过的秘密暗杀队伍的一份子；这支队伍中有多少战俑，而他们如今安在？作为一位战俑艺人，你是否被作为一位超级巨星而设计</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——如果如此，费奥兰家族对此有着怎样的看法？作为一位德鲁伊，你是否找到了和自然世界的内在联系，还是说一位古怪的<span class="GramE">奇械师</span>为你设计了改变形态和与自然生物沟通的可能性？</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">在完善一位奇怪的战俑角色时，你可以和</span><span lang="EN-US">DM</span><span style="font-family:宋体">商量完善关于你创造者和目的的细节。你是否是小批次生产的样品或者一部分？你知晓谁创造了你，又是出于怎样的目的，还是说你诞生的真实目的即使对你来说也至今仍是一个谜。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-spacerun:yes"> </span></span></p>
+<p class="10"><span style="font-family:等线">心与形</span><span lang="EN-US">Mind and Body</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">卡尼斯家族的<span class="GramE">奇械师</span>设计出你的身躯，并出于某个目的将你创造出来。当创造熔炉为你注入生命时，你就已经<i>知晓</i>了一些事情。如果你被创造为一位战士，你就生而知道如何挥舞利剑和长矛。你对团队作战有着本能的直觉。卡尼斯的教导者们的确教给了你一些事情，但那也像是是在提醒你一些你早已熟知的东西。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">这是战俑身上的未解之<span class="GramE">谜</span>之一。你的智能从何而来？卡尼斯家族给了你放心，但他们并<span class="GramE">未设计</span>出你的心智；如果他们可以做到，他们会将你变成毫无感情、甚至很可能没有独立意识的机械。<span class="GramE">许多奥术学者</span>的理论中说，创造熔炉并没有创造出战俑的心智，而是召来了它。一些人<span class="GramE">认为战俑</span>的灵魂是从其他位面召唤而来，一位战俑士兵是被注入了萨弗拉斯位面存在的灵魂。而其他人则推测创造熔炉可能是回收了杜鲁尔位面的残魂</span><span lang="EN-US">...</span><span style="font-family:宋体">也许你有时感觉记得某个新的技能时因为你在<span class="GramE">前世便</span>掌握了这一技艺。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">无论如何，你的卡尼斯导师们只会教导你仅专注于他们设定的目标，他们训练你抑制自己的情感，成为武器或者工具。而现在你获得了自由，可以充分发挥自己的潜力。这对你来说意味着什么？你能完整感受到所有的情绪，但你是否会去用心感受它们？你是否为愤怒和爱所迷惑了心智？什么才是你真正在意的东西？你是否能对某个特定的人感到忠诚？还是你的忠诚属于一个国家？或是<span class="GramE">属于战俑</span>种族的未来？<span class="GramE">一些战俑</span>陶醉于选择新的道路的能力，而另一些则坚持着他们原本的设计意图，只是因为想让这些技能发挥作用。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US"><span style="mso-spacerun:yes"> </span></span></p>
+<p class="30"><span style="font-family:等线">进化</span><span lang="EN-US">Evolution</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">战<span class="GramE">俑并非</span>机器；他们是活着的魔法生物，其肉体和精神皆可获得进化的飞跃。就像你能习得一项新的技能一样，你的身体在经年累月中也会改变形态。这是一种反映职业获得增益的方式；你能想到改变身体的方式来适应新的能力的方式么？如果你获得防御战斗风格，这可能反映为你的天生盔甲越发厚重。如果你是一位战俑术士，，你获得的新施法能力可能会反映为你身上出现<span class="GramE">的奥术符号</span>，或是能投射光芒和能量的生长水晶。永远不要忘记你自己是魔法和科学的产物。你的身躯可能由金属或皮革制成，但你仍然是活着的生物。</span></p>
+<p class="30"><span style="font-family:等线">内置护甲</span><span lang="EN-US">Integrated
+Protection</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">作为战俑，你的护甲时身体的一部分。你的皮肤是金属或皮革，与作为你肌肉的根状触须物理相连。尽管你可能<span class="GramE">能</span>更换你的护甲，但很少有<span class="GramE">战俑会真的</span>这样做。这一过程看上去类似人类蜕下自己的皮肤；尽管<span class="GramE">对战俑并无</span>危险，但这是个<span class="GramE">令战俑</span>不安和不适的过程。作为一位冒险者战俑，这对你来说是一项重要的能力，它能让你提升防御并利用魔法护甲。但在更换护甲时，你得考虑到你正在做的是多么严肃的事情。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">一旦你将一套护甲作为内置护甲，它便无法违背你的意愿被去除。无论如何，你对防御战斗风格或其他专长和增益而言始终视作穿着护甲。此外，内置护甲可以被魔法效应指定。第六章中的金刚护甲专长增强了你的内置护甲并能保护其<span class="GramE">不</span>受敌对魔法的影响。</span></p>
+<p class="30"><span style="font-family:等线">内置工具</span><span lang="EN-US">Integrated
+Tools</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">就<span class="GramE">像战俑能</span>搭载武器和护甲一样，他们也能将工具装在自己身体之中。有两种方法能做到这一点。第一种是得到一件<i>内置工具</i></span><i><span lang="EN-US">integrated tool</span></i><span style="font-family:宋体">。如第七章中所示，这是一件需要同调的普通魔法物品，通过与它同调，你能将它与自己的身体相连。另一种是获得第六章中的特使专精专长。这能让你获得相关工具的好处而不需要与物品同调。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">和<i>臂<span class="GramE">刃</span></i></span><span class="SpellE"><i><span lang="EN-US">armblade</span></i></span><span style="font-family:宋体">不同，一件<i>内置工具</i></span><i><span lang="EN-US">integrated tool</span></i><span style="font-family:宋体">不止是一柄与你手臂相连的锤子那么简单。大部分工具并不是单单一件的物品，而是一系列的小工具的集合。你如何使用它们？如果你有一套内置的盗贼工具，你是否能将自己的手指<span class="GramE">当做</span>开锁器使用？或者你能从前臂的夹层里拿出需要的各种工具？如果你有一套内置工具，它是安装在你的手臂还是身体里？无论你作何选择，你都必须记住你得需要有一只空出的手来说使用内置的工具。你可以说你的胸膛中埋入了一架风笛，但你仍然需要空出一只手来演奏它们。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">一件内置工具可以是角色概念的一个有趣部分，它能反映<span class="GramE">出战俑被制造</span>的目的。一位战俑化外之<span class="GramE">民可能</span>一套安装在她身体中的制图工具；她被作为一位探索者设计出来，能够使用内置工具和天生的方向感来不断完善自己的地图。一位<span class="GramE">内置着</span>长笛的战俑艺人会是一个令人印象深刻的形象。在这两种情况下，它们都不是战俑后天获得的工具，而是最初设计的一部分。如果你有一个有趣的起源故事，你可以征求</span><span lang="EN-US">DM</span><span style="font-family:宋体">的许可将角色创造时获得一件工具作为内置工具。如果不行，内置工具本身是一件普通魔法物品，在你的冒险之中也能轻松地获得。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-spacerun:yes"> </span></span></p>
+<p class="10"><span style="font-family:等线">战俑人设</span><span class="SpellE"><span lang="EN-US">Warforges</span></span><span lang="EN-US"> Concept</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">创造一位战俑角色时，最简单的开始是：你在战争期间做了什么？当战争结束时，你又获得了什么样的改变？你选择了你如今的道路，还是你被设计为成为现在的样子？第六章中包括了<span class="GramE">两种战俑可能</span>会探索的子职。<span class="GramE">超体宗战俑</span>武僧的能力可能反映为肉体进化和武术训练的结合。而铸形结社则是一条德鲁伊之路，能让你作为木头和铁石的生物探索与自然的联结。这里也有一些其他不寻常的人设概念。</span></p>
+<p class="30"><span style="font-family:等线">神之器</span><span lang="EN-US">The Divine Tool</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">你是由人类之手创造的生命。有许多人仍然相信你并不具有灵魂，不过是一件工具。是什么唤起了你对宗教的信仰并为你注入引导神圣魔法所需的虔诚？如果你正在创建一位<span class="GramE">战俑圣武士</span>或牧师，这里有一些值得考虑的点子：</span></p>
+<p class="MsoNormal" style="margin-left:0cm;text-indent:21.0pt;mso-list:l0 level1 lfo2"><?if !supportLists?><span lang="EN-US" style="font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings"><span style="mso-list:Ignore">l<span style='font:7.0pt "Times New Roman"'>  </span></span></span><?endif?><span style="font-family:宋体">昂纳塔是天命诸神中掌管熔炉之神，祂是铁匠和<span class="GramE">奇械师</span>的保护神。作为一位锻造领域牧师，你也许<span class="GramE">相信战俑并非</span>由凡人的智能所设计；更甚者，你相信艾伦</span><span style="font-family:
+宋体;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·</span><span lang="EN-US" style="mso-bidi-font-family:Calibri">d</span><span class="GramE"><span lang="EN-US">’</span></span><span style="font-family:宋体">卡尼斯是<span class="GramE">为神启所引导</span>，将昂纳塔的孩子带到这个世界上。你是否希望将人类和<span class="GramE">战俑</span>联合到一起，促进彼此和平共处？胡总你<span class="GramE">相信战俑们</span>有着自己的神圣目的，但仍然有待实现？</span></p>
+<p class="MsoNormal" style="margin-left:0cm;text-indent:21.0pt;mso-list:l0 level1 lfo2"><?if !supportLists?><span lang="EN-US" style="font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings"><span style="mso-list:Ignore">l<span style='font:7.0pt "Times New Roman"'>  </span></span></span><?endif?><span style="font-family:宋体">一位<span class="GramE">奇械师制造</span>了十五具战俑，每一具都作为是天命诸神和<span class="GramE">黑暗六</span>神中一位的化身。他们成功了吗？你驱使着神圣的魔法；在你的身体中是否有着天命诸神种下的种子，静候你获得新的等级时发芽生长？你代表着哪一位天命诸神？而如果这一实验成功了，你的十四位同胞如今又是怎样的情况？</span></p>
+<p class="MsoNormal" style="margin-left:0cm;text-indent:21.0pt;mso-list:l0 level1 lfo2"><?if !supportLists?><span lang="EN-US" style="font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings"><span style="mso-list:Ignore">l<span style='font:7.0pt "Times New Roman"'>  </span></span></span><?endif?><span style="font-family:宋体">你<span class="GramE">具有战俑</span>的身体，但心智却来自一位人类。你曾是一位沃尔之血的忠诚信徒。在死后，你在一具战俑的身体里醒来。你不知道究竟发生了什么。这是一场意外，<span class="GramE">还是死灵法师</span>的杰作？所有的战<span class="GramE">俑都是</span>幽灵的容器吗？不管怎样，你希望以第二次生命为生者而战。</span></p>
+<p class="MsoNormal" style="margin-left:0cm;text-indent:21.0pt;mso-list:l0 level1 lfo2"><?if !supportLists?><span lang="EN-US" style="font-family:Wingdings;mso-fareast-font-family:Wingdings;
+mso-bidi-font-family:Wingdings"><span style="mso-list:Ignore">l<span style='font:7.0pt "Times New Roman"'>  </span></span></span><?endif?><span style="font-family:宋体">一切高尚的灵魂都能<span class="GramE">唤起银焰的</span>力量，来为保护无辜者提供庇护。你是否为一位和你同一阵营战斗的圣武士所启迪，在他们倒下之后拾起他们的利剑？或者也许你是被<i>设计</i>为能够<span class="GramE">引导银焰的</span>力量</span><span style="font-family:宋体;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">——<span class="GramE">一</span>台瑟雷恩的主教们所委托制作的原型机。你是一个奇迹，一位具<span class="GramE">有侍僧</span>背景<span class="GramE">的受祝勇士</span>？还是大主教科洛森已经为你印上了可憎的烙印？</span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-spacerun:yes"> </span></span></p>
+<p class="30"><span style="font-family:等线">指导附件<span class="GramE">邪术师</span></span><span lang="EN-US">The Docent Warlock</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><i><span style="font-family:宋体">指导附件</span><span lang="EN-US">docent</span></i><span style="font-family:宋体">是一种智能魔法物品，一件能够<span class="GramE">装入战俑</span>胸膛并提供引导的球状机构。希恩德瑞克曾找到过古代指导附件，无人知晓这些神器的年代和起源。你找到了这样一个指导附件，并将它装入了自己体内，这改变了你的机能并赋予你超自然的力量。规则上而言你是一位邪术师，但你的胸口嵌着自己的宗主。你选择的宗主展现出一部分指导附件的特点。如果你选择邪魔作为自己的宗主，则黑暗的力量可能与这个指导附件相系。如果你选择天界宗主，指导附件中可能有一位光明的精魂。指导附件是你力量的来源，但你并不知道是否能够信任它们；探索指导附件的本质会是你未来股市的一部分。它是否是一个被遗忘的文明创造的魔法物品？还是指导附件中束缚的其实是不朽的精魂</span><span lang="EN-US">...</span><span style="font-family:宋体">如果如此，它会有着什么样的目的？</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">虽然这个故事的点子是你找到了一个指导附件，但你的宗主并不会占用你的同调位，而你也无法除去它；它成为了你身体的一部分。无论如何，如果你以某种方式除去了它，你也不会失去你获得的能力。这么做之后，也许你会找到一位新的宗主，或者你会发现力量本来就是你自己的一部分。</span></p>
+<p class="30"><span style="font-family:等线">被遗忘的刺客</span><span lang="EN-US">The Forgotten
+Assassin</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:宋体">你在一个湖底醒来。你没有如何沦落于此的记忆和在此之前生命中所拥有过的东西。作为不需要呼吸的战俑，你自己回到了岸上。你是一位战俑游荡者，迅捷而致命。但在你闪回的记忆中，你是一位拥有比现在更强大的技艺的刺客。当你获得等级时，你实际上是在恢复你曾经拥有的技能。而也许你也会同时恢复你的记忆。你为谁工作？你夺走过谁的性命？你的记忆是如何丢失的？最重要的是，你确定自己真的希望知道这些答案吗？</span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-spacerun:yes"> </span><o:p></o:p></span></p>
+</div>
+EndFragment
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '战俑：铁骨魂心'}, '*');
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前言</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:Bookmania;
+	panose-1:0 0 5 0 0 0 0 0 0 0;
+	mso-font-alt:Bookmania;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:7 1 0 0 147 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:宋体;
+	color:#C00000;
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	line-height:150%;
+	mso-pagination:none;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"微软雅黑",sans-serif;
+	mso-bidi-font-family:宋体;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	line-height:150%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 6 字符1";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:131%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	line-height:150%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	text-align:center;
+	line-height:150%;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	line-height:150%;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"副标题 字符";
+	mso-style-next:正文;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#5A5A5A;
+	mso-themecolor:text1;
+	mso-themetint:165;
+	letter-spacing:.75pt;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	mso-char-indent-count:2.0;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;}
+span.MsoSubtleEmphasis
+	{mso-style-priority:19;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:#404040;
+	mso-themecolor:text1;
+	mso-themetint:191;
+	font-style:italic;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-font-kerning:1.0pt;}
+span.a1
+	{mso-style-name:"副标题 字符";
+	mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:副标题;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#5A5A5A;
+	mso-themecolor:text1;
+	mso-themetint:165;
+	letter-spacing:.75pt;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.20, li.20, div.20
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a2, li.a2, div.a2
+	{mso-style-name:边栏正文内容;
+	mso-style-unhide:no;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:9.0pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.30, li.30, div.30
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:样式4;
+	mso-style-unhide:no;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:#5B9BD5;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.a3, li.a3, div.a3
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	margin:0cm;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:Bookmania;
+	mso-fareast-font-family:Bookmania;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Bookmania;
+	color:black;}
+p.Pa23, li.Pa23, div.Pa23
+	{mso-style-name:Pa23;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0cm;
+	line-height:19.05pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:Bookmania;
+	mso-fareast-font-family:Bookmania;
+	mso-hansi-font-family:等线;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.61
+	{mso-style-name:"标题 6 字符1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("前言.files/header.html") fs;
+	mso-footnote-continuation-separator:url("前言.files/header.html") fcs;
+	mso-endnote-separator:url("前言.files/header.html") es;
+	mso-endnote-continuation-separator:url("前言.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+<h1><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:"Arial Black";
+mso-hansi-font-family:"Arial Black"'>前言</span></h1>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">威<span class="GramE">世</span>智<span lang="EN-US"> Wizards of the Coast </span>在<span lang="EN-US"> 2002 </span>年宣布了奇幻背景的搜索：呼唤龙与地下城的新世界。他们收到了成千上万的条目，包括最终成为艾伯伦的我的世界。我和<span lang="EN-US"> James Wyatt, Bill <span class="SpellE">Slavicsek</span>, Christopher
+Perkins</span>，还有很多人一起工作，把我最初的想法发展成你们今天知道的艾伯伦。</p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">我为我们创造的世界感到无比自豪。然而，有一些我喜欢的元素，我从来没有机会在一本官方书籍中探索。在第一次设计这个世界的时候，我把水生国家包括在内
+— 考虑到人鱼、沙华<span class="GramE">鱼人</span>和其他有智慧的海底物种可能建立的文明。我们为艾伯伦开发了一种独特的位面体系，它与公认的巨轮基底世界有着非常不同的味道。我们提出了这样一个想法：在人类到来之前很久，一个由哥布林组成的骄傲帝国就已经统治了科瓦雷。但是任何一本资料书的页数都是有限的，在我们最初的艾伯伦战役设置中，这些想法不得不被删减—或者在某些情况下完全删减。这些位面是存在的，但是没有足够的空间来描述它们，每个位面都不超过一段，这不足以理解是什么<span class="GramE">使费尼亚</span><span lang="EN-US"> <span class="SpellE">Fernia</span> </span>不同于火元素位面，或者你如何在<span class="GramE">玛</span>伯尔<span lang="EN-US"> Mabar</span>进行一次冒险。从规则的资料中，我们知道沙华<span class="GramE">鱼人</span>存在，并有大使在风暴湾<span lang="EN-US"> <span class="SpellE">Stormreach</span></span>，但没有透露关于他们的文明。</p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">从一开始，我就希望我们能看到关于位面的艾伯伦资源书，但它从来没有实现—当艾伯伦在<span lang="EN-US"> D&amp;D </span>的第四和第五<span class="GramE">版回归</span>的时候，资源书需要优先考虑关键的基础设置，而没有空间去探索这些隐藏的角落。所以，虽然我一直梦想着卓<span class="GramE">姆</span>和位面在我的脑海里，但艾伯伦是威<span class="GramE">世</span>智的知识产权，只有他们可以出版新的艾伯伦资源。这一切在<span lang="EN-US">2018</span>年改变了，当威<span class="GramE">世</span>智和我一起创建了艾伯伦寻路者指南<span lang="EN-US"> <span class="SpellE">Wayfinder</span></span><span class="GramE">’</span><span lang="EN-US">s Guide to <span class="SpellE">Eberron</span></span>，一个在地下城主公会<span lang="EN-US"> Dungeon Masters Guild<span style="mso-spacerun:yes">  </span></span>网站上发布的<span lang="EN-US"> PDF </span>扩充 … 在艾伯伦的历史上，通过地下城主公会，任何人都可以为艾伯伦创建新的内容。第二年，在制作官方第五版精装本《艾伯伦：从终末战争复苏<span lang="EN-US"> <span class="SpellE">Eberron</span>: Rising from the Last War</span>》时，设计团队扩展了摩<span class="GramE">洛</span>矮人的故事。但是，再一次，没有足够的空间来关注他们与异变魔<span lang="EN-US"> <span class="SpellE">daelkyr</span> </span>的冲突以及下面王国的神秘。</p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">这是和我一起<span class="GramE">在播客显能</span>区域<span lang="EN-US"> Manifest Zone </span>工作的<span lang="EN-US"> Wayne Chang </span>的想法。我们一起草拟了一本书的计划，这本书深入探讨了许多我一直想探索的主题—位面、达坎和海底国家—
+以及一些<span class="GramE">更近期</span>的发展，如摩<span class="GramE">洛</span>。就这样，这本书诞生了<span lang="EN-US">!</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">事实证明，写这么大的一本书是一项巨大的工作。<span lang="EN-US">Laura Hirsbrunner </span>作为编辑和布局设计师完成了<span class="GramE">艰钜</span>的任务，而<span lang="EN-US"> Will Brolley </span>则开发了身临其境的怪兽、魔法物品、<span class="GramE">范</span>型等等。由于在压力下工作是激发灵感的好方法，我非常感谢<span lang="EN-US"> Laura, Wayne </span>和<span lang="EN-US"> Will </span>，因为他们不断给予我反馈和灵感。</p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">我们还与许多艺术家合作，为这本书发展原创艺术。从第<span lang="EN-US">3</span>章开头的<span lang="EN-US">Katerina <span class="SpellE">Poliakova</span></span>对
+泰拉•麦伦<span lang="EN-US"> Tira Miron </span>的精彩描绘，到<span lang="EN-US">Marco
+Bernardini </span>令人惊叹的每个位面的微缩视图的平面图，看到世界未被探索的这些方面变得栩栩如生，真是令人兴奋。在某些情况下，为了向艺术家传达一个概念，我把自己有限的艺术技能运用到工作中。下面是我在沉睡的卡尔拉萨<span lang="EN-US"> <span class="SpellE">kar</span></span><span class="GramE">’</span><span class="SpellE"><span lang="EN-US">lassa</span></span><span lang="EN-US"> </span>附近建造的沙华<span class="GramE">鱼人</span>城市的初稿—在第四章中，你可以看到<span lang="EN-US"> Vincentius Matthew </span>是如何理解我的草图的<span lang="EN-US">!</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">如果我没有召集艾伯伦玩家、<span lang="EN-US">DMs</span>和创造者们，包括我们优秀的游戏测试人员，那我就太粗心了<span lang="EN-US">!</span>当然，还有我才华横溢的妻子，富有创造力的合作伙伴，两家工作室的联合创始人，<span lang="EN-US">Jennifer Ellis </span>— 她总是愿意谈论关于秘密鲨鱼人或和平位面<span lang="EN-US"> Plane
+of Peace </span>上的旅游景点的话题。</p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">在我把这本书摆在你面前之前，有一个免责声明：当我在我的桌子上运行它时，这是一个艾伯伦的愿景。你会发现一些细节和以前的资料书不一致<span lang="EN-US">;</span>使用哪一种由你决定。但是记住，总有第三种选择<span lang="EN-US">:</span>使用你的答案。从一开始，大约<span lang="EN-US">20</span>年前的今天，当我们选择不呈现哀伤咏叹<span lang="EN-US"> Mourning </span>的原因或揭示死亡龙纹<span lang="EN-US"> Mark of Death </span>的力量时，我们希望艾伯伦能够激励玩家和地下城主，而不是限制他们。这是一本让你建立想法的书<span class="GramE">—有些</span>甚至你可能会忽略。这是我的艾伯伦，但我总是很兴奋看到人们把世界变成他们自己的。</p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><b>而现在 —
+艾伯伦正等着你<span lang="EN-US">!<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0">（<span lang="EN-US">PS</span>：这是作者签名）</p>
+<p class="MsoNormal"><span lang="EN-US" style="mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="图片_x0020_9" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:228pt;height:155.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="前言.files/image003.jpg" o:title=""/>
+</v:shape><![endif]--><?if !vml?><img height="207" src="前言.files/image003.jpg" v:shapes="图片_x0020_9" width="304"/><?endif?></span></p>
+</div>
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '前言'}, '*');
+        }
+</script>
+</body>
+</html>

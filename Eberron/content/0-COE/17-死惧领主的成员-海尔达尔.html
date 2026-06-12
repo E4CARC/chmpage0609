@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海尔达</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:宋体;
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:1.0gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	color:#822F18;
+	font-weight:bold;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 6 字符1";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:130%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	mso-char-indent-count:2.0;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.MsoIntenseEmphasis
+	{mso-style-priority:21;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:#4472C4;
+	mso-themecolor:accent1;
+	font-style:italic;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+p.30, li.30, div.30
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a1, li.a1, div.a1
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.20, li.20, div.20
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:样式4;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:#5B9BD5;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.200
+	{mso-style-name:20;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.21
+	{mso-style-name:21;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.22
+	{mso-style-name:22;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.61
+	{mso-style-name:"标题 6 字符1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("17-死惧领主的成员-海尔达尔.files/header.html") fs;
+	mso-footnote-continuation-separator:url("17-死惧领主的成员-海尔达尔.files/header.html") fcs;
+	mso-endnote-separator:url("17-死惧领主的成员-海尔达尔.files/header.html") es;
+	mso-endnote-continuation-separator:url("17-死惧领主的成员-海尔达尔.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="LAYOUT-GRID:  15.6pt none">
+<h2><span style='FONT-FAMILY: "微软雅黑",sans-serif; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial'>海尔达，<span lang="EN-US"><font face="Arial">“</font></span><span style='FONT-FAMILY: "微软雅黑",sans-serif; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial'>克拉肯之灾</span><span lang="EN-US"><font face="Arial">”</font></span></span><span lang="EN-US"><span class="SpellE">Haeldar</span> <span class="SpellE">Krakensbane</span><o:p></o:p></span></h2>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><i style="mso-bidi-font-style: normal"><span lang="EN-US" style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">“</span></i><i style="mso-bidi-font-style: normal"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">你认为你已经直视死亡了吗？那得到你凝视着一只龙龟头骨的空洞眼眶时<span lang="EN-US">——</span>在它倾覆了你的船并向你袭来之后。我现在告诉你，你离无光岛<span lang="EN-US">Sunless 
+Isle</span>太近了，而海盗是你现在最不用担心的事情。我知道你以前听过这些故事，但你有没有想过<span class="GramE">血帆精</span>类是怎么弄来这些骸骨并激活它们的？ 我可以用两个词告诉你：海尔达，<span lang="EN-US">‘</span>克拉肯之灾<span lang="EN-US">’</span>。</span></i><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><i style="mso-bidi-font-style: normal"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">那个精灵在生前是传奇，一个为了获得与巨龙战斗的机会而同反叛精灵并肩作战的屠龙者。因此，他因自己的错误被流放，并和其他精灵一同向北航行。他的船与该死的巨大克拉<span class="GramE">肯发生</span>冲突，那克拉肯要求舰队进贡。精灵们<span lang="EN-US">——</span>他们理所当然地害怕，都同意为此支付金钱。但是海尔达，他不同意。他的祖先<span lang="EN-US">——</span>永远不会屈服于巨兽，明白吗？。所以，他抢过了船的控制权；毫不奇怪，克拉肯让它沉没并杀死了船上的所有人<span lang="EN-US">——</span>包括海尔达的孩子们！你以为事情就这样结束了？但几周后，当精灵们在无光的海岸上扎营时，他们看到地平线上出现了一个怪物。这是克拉肯；在它吞噬了海尔达之后，他拒绝死亡，向上击穿它的心脏并从它的眼眶逃出。现在他在这里，骑着这该死的死东西返航。<span lang="EN-US">‘’</span></span></i><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><i style="mso-bidi-font-style: normal"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">那只巨兽至今<span class="GramE">仍在法勒恩的</span>海域巡逻。而海尔达<span lang="EN-US"> 
+……</span>好吧，他大部分时间都在哀悼他失去的孩子，但当他兴致高涨时，他又回到了大海。他不会强迫自己人去战斗，不会再这样了<span lang="EN-US">——</span>所以他会登上一艘陌生人的船，接管指挥权，并开着它去进行另一场怪物狩猎。如果他来到你的船上，希望你是个幸运儿，希望他能在你的船完好无损的情况下击落猎物。克拉肯之灾从未错过他的目标<span lang="EN-US">……</span>但他驾驶的船只很少能再次回家。<span lang="EN-US">”</span></span></i><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">生前，海尔达<span lang="EN-US">·</span>阿尔瑞埃<span class="SpellE"><span lang="EN-US">Haeldar</span></span><span lang="EN-US"> <span class="SpellE">Arrael</span></span>是卓利厄斯<span lang="EN-US">·</span>泰伦<span class="SpellE"><span lang="EN-US">Draleus</span></span><span lang="EN-US"> <span class="SpellE">Tairn</span></span><span class="GramE">一</span>族的泰纳达尔精灵<span class="SpellE"><span lang="EN-US">Tairnadal</span></span>。他与沃尔宗族并肩作战，不是因为他相信他们的正义性，而是因为这给了他与巨龙战斗的机会。在冲突的过程中，他与一位维瑞尔<span class="SpellE"><span lang="EN-US">Vyrael</span></span><span lang="EN-US">
+</span>宗族的精灵坠入爱河；在沃尔宗族失败后，他与妻子和亲属一同向北航行。正如故事所说，当一只强大的海兽威胁到他的船时，海尔达将对荣耀的渴求置于家人的安全之上。他失去了一切，包括他自己的生命<span lang="EN-US">——</span>但他对胜利的渴望是如此强烈，以至于他以死亡骑士的身份在克拉肯的腹中重生，杀死了他的敌人并激活了它的尸体。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="MARGIN-TOP: 15.6pt">人格<span lang="EN-US">Personality 
+<o:p></o:p></span></h4>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达对荣耀的永恒追求是唯一能让他从极度内疚和耻辱解脱的东西。他一直在寻找更大、更大的挑战，来掩盖他的痛苦。作为<span class="GramE">法勒恩的</span>守护者，他是许多被控制的不死巨兽的来源。海尔达亲手杀死了这些生物<span lang="EN-US">——</span>海蛇、<span class="GramE">龙龟和做为他头衔的克拉肯，而他独特的天赋使他杀死的巨兽被激活；然而，他回到岛上后会将这些哨兵的控制权交给活着的死灵法师。</span> 
+正如故事所说，当他想去打猎时，海尔达会登上一艘血帆船<span lang="EN-US">——</span>但随后他会登上并控制另一艘船，以确保他不会在他对海上挑战的不懈追求中将更多精灵置于险境。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="MARGIN-TOP: 15.6pt">使用海尔达，<span lang="EN-US">“</span>克拉肯之灾<span lang="EN-US">”Using <span class="SpellE">Haeldar</span> <span class="SpellE">Krakensbane</span> <o:p></o:p></span></h4>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">水上的冒险者可能会遇到一艘被海尔达夺取并正在狩猎中的船<span lang="EN-US">——</span>或者，他们可能在被海尔达征用的船上，并且必须决定是与死亡骑士战斗还是协助他，并希望在他的狩猎中幸存下来。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BACKGROUND: #e7e6e6; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-background-themecolor: background2; mso-yfti-tbllook: 1184; mso-border-insideh: none; mso-border-insidev: none">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastrow: yes">
+<td style="WIDTH: 414.8pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="553">
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><span style="FONT-SIZE: 16pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 等线">海尔达，<span lang="EN-US" style="COLOR: black; mso-color-alt: windowtext">“</span><span style="COLOR: black; mso-color-alt: windowtext">克拉肯之灾<span lang="EN-US">”<span class="SpellE">Haeldar</span> <span class="SpellE">Krakensbane</span></span></span></span></b><span lang="EN-US" style="FONT-SIZE: 16pt; FONT-FAMILY: 宋体"><o:p></o:p></span></p>
+<p class="MsoNormal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">中型不死生物，混乱邪恶<span lang="EN-US"><o:p></o:p></span></span></i></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">护甲等级：（镶钉皮甲，盾牌）</span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">生命值：<span lang="EN-US">199 (21d8 + 105)</span></span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">速度：<span lang="EN-US">30 </span>英尺，游泳<span lang="EN-US"> 30 </span>英尺<span lang="EN-US"><o:p></o:p></span></span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="COLOR: #640000; mso-bidi-font-family: 等线"><o:p> </o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">力量<span lang="EN-US">19 (+4)<span style="mso-spacerun: yes">    
+      </span></span>敏捷<span lang="EN-US">16 (+3)<span style="mso-spacerun: yes">    </span></span>体质<span lang="EN-US">20 (+5) </span></span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">智力<span lang="EN-US">11 (+0)<span style="mso-spacerun: yes">    
+      </span></span>感知<span lang="EN-US">14 (+2)<span style="mso-spacerun: yes">    </span></span>魅力<span lang="EN-US">18 (+4)</span></span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span lang="EN-US" style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线"><o:p> </o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">豁免：敏捷<span lang="EN-US">+9,</span>感知<span lang="EN-US">+8, </span>魅力<span lang="EN-US">+10</span></span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">伤害免疫：黯蚀，毒素</span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">状况免疫：力竭、恐惧、中毒</span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">感官：黑暗视觉<span lang="EN-US"> 120 </span>英尺，被动察觉<span lang="EN-US"> 12</span></span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">语言：精灵语<span lang="EN-US">, </span>通用语</span><span lang="EN-US" style="COLOR: #640000"><o:p></o:p></span></b></p>
+<p class="MsoNormal"><b><span style="FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">挑战等级：<span lang="EN-US">17 (18,000 XP) <span style="mso-spacerun: yes"> </span></span>熟练加值<span lang="EN-US"> 
+      +6<o:p></o:p></span></span></b></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">行动自如。</span></i></b><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达无视困难地形和魔法效应造成的降低速度或陷入束缚的效应。他可以花费<span lang="EN-US">5</span>尺移动力从任何非魔法的被束缚或被擒<span class="GramE">抱状态</span>中解脱。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">魔法抗性。</span></i></b><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达在对抗法术和其他魔法效果的豁免检定中具有优势。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">号令亡灵<span lang="EN-US">Marshal Undead</span>。</span></i></b><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达和他周围<span lang="EN-US"> 60 </span><span class="GramE">英尺内</span>的友方不死生物在对抗驱散不死生物效果的豁免检定上具有优势，前提是他没有丧失行动能力。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">非凡本质。</span></i></b><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达不需要呼吸空气，也不需要饮食和睡眠。<span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><span style="FONT-SIZE: 16pt; FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">动作</span></b><span lang="EN-US" style="FONT-SIZE: 16pt; COLOR: #640000"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">多重攻击</span></i></b><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">。</span></i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达发动三次三叉戟攻击。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">三叉戟。</span></i></b><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">近战武器攻击，<span lang="EN-US">+10 </span>命中，触及<span lang="EN-US">5 </span>尺，单一目标。命中：<span lang="EN-US">7</span>（<span lang="EN-US">1d6 + 4</span>）挥砍伤害，外加<span lang="EN-US"> 18</span>（<span lang="EN-US">4d8</span>）<span class="GramE">黯蚀伤害</span>。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">克拉肯的呼唤（<span lang="EN-US">1/</span>日）<span lang="EN-US">Kraken<span class="GramE">’</span>s 
+      Call (1/Day)</span>。</span></i></b><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达在距离他<span lang="EN-US"> 120 </span>英尺范围内的一个无人占据的空间中召唤出一只服从他的巨大克拉肯。克拉<span class="GramE">肯周围</span><span lang="EN-US">20</span>英尺范围内的每个生物都必须进行<span lang="EN-US"> DC 18 </span>的敏捷豁免。如果豁免失败，生物会受到<span lang="EN-US"> 28 (8d6) 
+      </span>点闪电伤害和<span lang="EN-US"> 28 (8d6) </span>点钝击伤害，且会<span class="GramE">被擒抱并束缚</span>（逃脱<span lang="EN-US"> DC 
+      18</span>）。豁免成功后，生物仅受到一半的伤害，并且不会被擒抱或束缚。<span class="GramE">克拉肯会在</span>海尔达的下个回合结束时离开，并释放所有被擒抱的生物。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><span style="FONT-SIZE: 16pt; FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">附赠动作</span></b><span lang="EN-US" style="FONT-SIZE: 16pt; COLOR: #640000"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">巨兽克星（<span lang="EN-US">3/</span>日）<span lang="EN-US">Leviathan<span class="GramE">’</span>s Bane (3/Day)</span>。</span></i></b><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达将对狩猎的渴望灌注在他的武器中。海尔达下一次使用近战武器攻击命中生物时（必须在一分钟之内），他的武器会撕裂该生物的灵魂，并对目标造成额外<span lang="EN-US"> 14 (4d6) 
+      </span>点心灵伤害；正在游泳或浸入水中的生物对该攻击的额外心灵伤害具有易伤。被击中时，目标必须成功通过<span lang="EN-US">DC 
+      18</span>的感知豁免，否则它在攻击检定和属性检定中处于劣势，并直到它的下一回合结束后才能做出反应。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><span style="FONT-SIZE: 16pt; FONT-FAMILY: 等线; COLOR: #640000; mso-bidi-font-family: 等线">反应</span></b><span lang="EN-US" style="FONT-SIZE: 16pt; COLOR: #640000"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><b style="mso-bidi-font-weight: normal"><i><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">格挡。</span></i></b><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">海尔达在被一次近战攻击命中时，其<span lang="EN-US">AC</span>加上<span lang="EN-US">6</span>。此时该他必须能看见攻击者，且有在持用一把近战武器。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h2><span lang="EN-US"><o:p> </o:p></span></h2></td></tr></tbody></table>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p></div>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '海尔达'}, '*');
+        }
+</script>
+</body>
+</html>

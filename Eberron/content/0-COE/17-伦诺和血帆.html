@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艾伦诺和血帆</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:宋体;
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:1.0gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	color:#822F18;
+	font-weight:bold;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 6 字符1";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:130%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	mso-char-indent-count:2.0;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.MsoIntenseEmphasis
+	{mso-style-priority:21;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:#4472C4;
+	mso-themecolor:accent1;
+	font-style:italic;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+p.30, li.30, div.30
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a1, li.a1, div.a1
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.20, li.20, div.20
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:样式4;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:#5B9BD5;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.200
+	{mso-style-name:20;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.21
+	{mso-style-name:21;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.22
+	{mso-style-name:22;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.61
+	{mso-style-name:"标题 6 字符1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("17-伦诺和血帆.files/header.html") fs;
+	mso-footnote-continuation-separator:url("17-伦诺和血帆.files/header.html") fcs;
+	mso-endnote-separator:url("17-伦诺和血帆.files/header.html") es;
+	mso-endnote-continuation-separator:url("17-伦诺和血帆.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="LAYOUT-GRID:  15.6pt none">
+<h2><span style='FONT-FAMILY: "微软雅黑",sans-serif; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial'>艾伦诺<span class="GramE">和血帆</span></span><span class="SpellE"><span lang="EN-US">Aerenal</span></span><span lang="EN-US"> and the <span class="SpellE">Bloodsails</span> <o:p></o:p></span></h2>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">为什么艾伦诺不<span class="GramE">摧毁血帆公国</span>？毕竟，玛伯尔消耗的是光和生命。许多学者认为，任何将<span class="GramE">玛</span>巴尔的能量引入艾伯伦的事物本质上都是具有破坏性的</span><span lang="EN-US">——</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">特别是，被玛伯尔的力量激活的不死生物会消耗艾伯<span class="GramE">伦本身</span>的生命力。</span> <span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">在许多方面，这类似于我们世界的全球变暖威胁。</span>
+<span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">这种威胁会在很长一段时间内持续产生影响（例如骷髅战士驻军周围的植被枯萎）。</span>
+<span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">鉴于此，有人对此感到担忧，有人认为这是无稽之谈，而与此同时，绝大多数人根本不在乎，因为这不会影响他们的日常生活。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="MARGIN-TOP: 15.6pt">死亡守卫的优先级别<span class="SpellE"><span lang="EN-US">Deathguard</span></span><span lang="EN-US"> Priorities 
+<o:p></o:p></span></h4>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">艾伦诺精灵非常关心玛伯尔对艾伯伦的威胁，他们创造了亡灵守卫来消灭不死生物并监管<span class="GramE">玛伯尔死灵术</span>的实施。但艾伦诺是一个封闭的国家，几乎不对其边界以外的世界采取任何行动。 
+正如最初的《艾伯伦战役设定集》中所描述的，死亡守卫<span lang="EN-US">“</span>是为了与国内中的腐化灵魂战斗而创建的<span lang="EN-US">……”</span>也就是说，他们主要在艾伦诺境内活动。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">如果你把<span class="GramE">玛伯尔死灵法术</span>比作全球变暖的话，艾伦诺已经在内部制定了极其严格的规定<span lang="EN-US">……</span>但他们并没有派士兵去底特律炸毁汽车工厂，更不用说在新泽西砸毁个别耗油的汽车了。在坎纳斯的军队中，单是骷髅的数量就可能超过整个<span class="GramE">法勒恩的</span>人口。 然而，死亡守卫并没有以某种方式摧毁坎纳斯或骸骨要塞<span lang="EN-US">Fort 
+Bones</span>。他们所做的就是派出特工<span lang="EN-US">——</span>尤其是一名能够直接接触国王的极具影响力的代理人<span lang="EN-US">*</span>，说服<span class="GramE">凯</span>乌斯三<span class="GramE">世</span>断绝与沃尔之血的联系，并限制<span class="GramE">军用死灵法术</span>。与直接采取军事行动相比，这是死亡守卫在更广阔的世界中行动时更典型的方式。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">（注</span><span lang="EN-US">*</span></span><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">：可能指的是</span><span class="SpellE"><span lang="EN-US">Kaius</span></span><span lang="EN-US"> 
+III</span></span><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">的王后</span><span class="SpellE"><span lang="EN-US">Etrigani</span></span></span><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">，嫁给国王的原艾伦诺大使）</span><span lang="EN-US"><o:p></o:p></span></span></p>
+<h4 style="MARGIN-TOP: 15.6pt"><span class="GramE">法勒恩的</span>玛伯尔力量<span class="SpellE"><span lang="EN-US">Farlnen<span class="GramE">’</span>s</span></span><span lang="EN-US"> <span class="SpellE">Mabaran</span> <o:p></o:p></span></h4>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">还需要注意的是，<span class="GramE">法勒恩位于</span>强大的玛伯尔显能区域。玛伯尔显能区域是世界的一部分，并且一直被伊瑞安显能区域的存在所抵消。在这样的显能区域中实践<span class="GramE">玛伯尔死灵法术</span>对环境的影响较小，因为你已经半只脚踏进玛伯尔了。因此，在法勒恩制作骷髅比在<span class="GramE">萨</span>恩<span class="SpellE"><span lang="EN-US">Sharn</span></span>制作<span class="GramE">骷颅增加</span>的<span lang="EN-US">“</span>碳足迹<span lang="EN-US">”</span>要少。许多其他主要<span class="GramE">的死灵法术</span>中心<span lang="EN-US">——</span>例如埃图尔<span class="SpellE"><span lang="EN-US">Atur</span></span><span lang="EN-US">——</span>也位于玛伯尔显能区域。艾伦诺精灵不喜欢使用<span class="GramE">玛伯尔死灵法术</span>，但他们不太关心埃图尔、奥达基尔<span class="SpellE"><span lang="EN-US">Odakyr</span></span>或法勒恩；事实上，<span class="GramE">死灵法师</span>引导该区域的负能量可能会减少其整体环境影响。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="MARGIN-TOP: 15.6pt"><span class="GramE">小任务</span><span lang="EN-US">Small Potatoes<o:p></o:p></span></h4>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">这有助于解释为什么艾伦诺不寻求消灭血帆。摧毁单个不死生物对艾伦诺来说是小菜一碟；他们并没有试图猎杀世界上的每一个吸血鬼，就像我们世界的环保活动家没有炸毁单独的汽油动力汽车一样。偶尔，他们确实会以他们认为是高价值的目标为目标<span lang="EN-US">——</span>几个世纪前他们打败了瓦伦纳恩领主，并杀死了爱尔达伦（尽管他们与当地英雄合作实现了这一目标）。 
+但总的来说，艾伦诺并<span class="GramE">不介意血帆的</span>存在，只要他们仍然主要局限于法勒恩。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span class="GramE"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">如果血帆在</span></span><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">整个公国传播<span class="GramE">玛伯尔死灵法术</span>，艾伦诺会更加担心<span lang="EN-US">——</span>这就是<span class="GramE">血帆没有</span>将他们的知识或文化传播到岛外的原因之一<span lang="EN-US">……</span>但即使发生了，正如在坎纳斯所见，艾伦诺也更有可能派外交官而不是刺客来处理这个问题。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="LINE-HEIGHT: 150%; TEXT-INDENT: 21pt"><span style="FONT-FAMILY: 等线; COLOR: black; mso-bidi-font-family: 等线">简而言之，死亡守卫的袭击可能会发生，但它们在艾伦诺之外极为罕见<span lang="EN-US">——</span>当它们真的发生时，死亡守卫很可能会与某些当地英雄合作，比如拉扎尔的明光<span lang="EN-US">·</span>洛里斯特。因此，如果冒险者与死惧领主发生冲突，死亡守卫不太可能直接为他们解决问题；艾伦诺更有可能尝试与有能力的冒险家合作并共同应对。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p></div>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '艾伦诺和血帆'}, '*');
+        }
+</script>
+</body>
+</html>

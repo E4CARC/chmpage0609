@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>银焰：守护无辜</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:宋体;
+	color:#C00000;
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.0pt;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:7.5pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+p.20, li.20, div.20
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a1, li.a1, div.a1
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.30, li.30, div.30
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("银焰.files/header.html") fs;
+	mso-footnote-continuation-separator:url("银焰.files/header.html") fcs;
+	mso-endnote-separator:url("银焰.files/header.html") es;
+	mso-endnote-continuation-separator:url("银焰.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+<h1><span style='font-family:"微软雅黑",sans-serif'>银焰：守护无辜<span lang="EN-US">The
+Silver Flame: Defending the Innocent</span></span></h1>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-spacerun:yes"> </span></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">艾伯伦世界距离末日仅一步之遥。魔君们正在挣脱他们的封印，化为人形的罗刹们正在操纵人类活动以释放他们的主人。如果你生活在科瓦雷，你就会知道一个绝对的事实，那就是死者爬起来捕猎生者。你知道，可怖的异常灾难随时可能从地下世界爆发，<span class="GramE">狼人们</span>仅需一口能把你变成一个凶残的怪物。你懂的越多事情就越糟</span><span lang="EN-US">——</span><span style="font-family:等线">甚至连你的梦也可能被黑暗梦境所操纵。这些都不是信仰的问题，这些都仅仅是的事实而已。魔君具现了我们最深处的恐惧。他们在仇恨、残酷和混乱中茁壮成长。即便是在封印之中，他们也可以利用自己的感召把人们推向黑暗。如果他们突破了封印，你所知道的世界就会毁灭。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">         </span></span><span style="font-family:等线">这些真实存在</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">——以及保护世界不受其影响的需要——<span class="GramE">是银焰教会</span>的根基。在这个世界，致命的超自然邪恶是实实在在存在的事实，而教会本身是在一位高贵的圣武士献出生命把她的国家从深渊中拉回来的时候建立起来的。有些人可能会错误地认为教会只是一个等级森严的好战宗教组织，并且觉得它毋庸置疑是一股代表着压迫的力量。<span class="GramE">虽然银焰教会</span>是一种宗教，但它同样也是一个志愿民兵组织，其成员时刻<span class="GramE">准备着愿冒</span>生命危险保护每一个无辜的人，使他们免受那些潜伏在暗处的致命威胁。当末日来临之时，圣堂武士不是来告诉你应该如何过你的日子的，</span><span style="font-family:等线">他们来是为了确保你能过你的日常生活，保护你不受随时可能出现的怪物和邪魔伤害。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-no-proof:yes"><img height="388" id="_x0000_i1025" src="银焰.files/银焰564.png" width="357"/></span><span style="mso-spacerun:yes"> </span></span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif'>信仰的基石</span><span lang="EN-US">Foundations
+of the faith</span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰是</span></span><span style="font-family:等线">在邪魔时代铸就的，许多文明的英雄们在过去的岁月中运用了它的力量。下述的教条构成<span class="GramE">了银焰的</span>共同基石，不管你是加什卡拉<span class="GramE">兽人还是瑟</span>雷恩的圣堂武士</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——尽管极端的教派会选择性地遵循或抛弃某些信条。当你<span class="GramE">与银焰的</span>追随者们打交道时，记住以下几点。</span></p>
+<h5><span style='font-family:"微软雅黑",sans-serif'>是以伟力，而非神祇</span><span lang="EN-US">A Power, not a God </span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰是</span></span><span style="font-family:等线">邪魔时代用来约束魔君的一种力量。它有一个具体的目的</span><span lang="EN-US">:</span><span style="font-family:等线">它是把末日邪恶的牢笼。天命诸神和<span class="GramE">黑暗六神影响</span>着日常生活的方方面面，<span class="GramE">但银焰不同</span>。它从不被视为有拟人化的实体，相反，追随者们认为它是一种纯粹的天界圣能。它本身并不能影响世界，它只能赋予那些会用它来保护无辜的勇士力量。<span class="GramE">银焰本身</span>不会对人说话，引导信徒的<span class="GramE">是银焰之</span>声。归根结底，<span class="GramE">银焰是</span>一种能量之源，如果你试图保护无辜者不受超自然邪恶的伤害，你可以<span class="GramE">利用银焰的</span>力量来帮助你战斗。</span></p>
+<h5><span style='font-family:"微软雅黑",sans-serif'>共存</span><span lang="EN-US">Coexistence
+</span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰不会</span></span><span style="font-family:等线">像阿拉瓦伊那样给你带来丰收，也不会像吞噬（</span><span lang="EN-US">The
+Devourer</span><span style="font-family:等线">）那样给你带来风暴的洗礼。<span class="GramE">银焰不是</span>神，而是一种为某一特定目标服务的能量，在<span class="GramE">银焰与</span>天命诸神的信仰之间并没有本质上的冲突。<span class="GramE">银焰教会</span>是一个基于为公众服务的务实信仰。它们认为世界会自我运转</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——无论你是否承认阿拉瓦伊</span><span style="font-family:等线">或吞噬，都会有丰收或风暴</span><span lang="EN-US">——</span><span style="font-family:等线">最重要的是保护人们不受可能那些潜伏的黑暗所伤害。教会本身并不挑战对天命诸神的崇拜，而且这两种信仰在历史上一直和平共存。杜·哈拉的圣武士经常<span class="GramE">与银焰圣堂</span>武士合作以应对威胁，而天命诸神的信者们通常也乐于接受圣堂武士的帮助。</span></p>
+<h5><span class="GramE"><span style='font-family:"微软雅黑",sans-serif'>护无旁类</span></span><span lang="EN-US">Defense of All </span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰保护</span></span><span style="font-family:等线">整个世界不受魔君的伤害，同样，那些引导它力量的人应该保护所有无辜者不受超自然的威胁。虽然极端主义教派可能偏离这条道路，<span class="GramE">但银焰教会</span>的核心信仰并没有让任何国家或物种凌驾于其他物种之上。<span class="GramE">银焰圣堂</span>武士应该保护每个人不受邪恶之害。修士则应该引导和关心所有<span class="GramE">有</span>需要的人。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">这一原则在终<span class="GramE">末战争</span>中表现得很明显。甚至当教会在<span class="GramE">瑟</span>雷恩掌权时，其他国家的大多数牧师和圣堂武士仍继续为他国的人民服务。不管枢机主教和守护者所处的地位如何，<span class="GramE">圣焰的</span>使命就是保卫无辜者，而<span class="GramE">不</span>非统治世界。如果在一场冲突中出现超自然的威胁，布鲁兰和塞尔的圣堂武士会迅速与<span class="GramE">瑟</span>雷恩的同行结盟；如果撒法拉斯的邪魔出现在战场上，所有的圣堂武士都将联合起来对抗他们。但是在没有超自然邪恶的情况下，没有什么能阻止圣堂武士为他们的国家服务或是保护他们的家园。虽然<span class="GramE">瑟</span>雷恩的圣堂武士也是<span class="GramE">瑟</span>雷恩的军队，但他们仍然认识到自己神圣的职责与为国家服务之间的区别。</span></p>
+<h5><span style='font-family:"微软雅黑",sans-serif'>邪恶永存</span><span lang="EN-US">Eternal
+Evil </span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰被</span></span><span style="font-family:等线">点燃以束缚邪恶的魔君那无法被摧毁的不朽灵魂。魔君是仇恨、恐惧、贪婪、残忍的化身</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——而且，就像魔君自身一样，它们永远无法被永久摧毁，只能被封印于世界一角。<span class="GramE">银焰要</span>传达的意志并不是说邪恶可以被永久根除，而是我们必须时刻警惕邪恶的出现并做好应对的准备。哪怕在最祥和的时代，新的恐惧也可能从凯博尔冒出来，或者有<span class="GramE">邪<span style="mso-ascii-font-family:等线;mso-hansi-font-family:等线">影可能从玛</span></span></span><span style="font-family:等线">伯尔（<span lang="EN-US">Mabar</span>）通过位面之门投射进来。即使在一个民风淳朴的城镇，也会有人被贪婪或愤怒所腐蚀。圣堂武士时刻准备着对抗刀剑上的威胁，而牧师则应当引导他们的人民走上正道。</span></p>
+<h5><span class="GramE"><span style='font-family:"微软雅黑",sans-serif'>冥途与银焰</span></span><span style='font-family:"微软雅黑",sans-serif'>之声</span><span lang="EN-US">Afterlife And
+The Voices Of The Flame </span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰的</span></span><span style="font-family:等线">基本教义并向信徒不承诺死后会有惩罚或天堂。但它的信徒通常相信，那些过着善良生活的人的灵魂不会受到伤害地穿越杜鲁尔（</span><span lang="EN-US">Dolurrh</span><span style="font-family:等线">）而与<span class="GramE">银焰本身</span>融合。通过强化银焰，这些灵魂将继续保护后世的无辜者。<span class="GramE">与银焰的</span>融合通常被描述为变为与那些已经逝去的人们的超然结合的超越凡人理解的状态</span><span lang="EN-US">——</span><span style="font-family:等线">这会被视为一种嘉奖与使命。</span></p>
+<p class="MsoNormal"><span style="font-family:等线">一般来说，<span class="GramE">与银焰融合</span>的灵魂将不会再回到人间。然而，<span class="GramE">银焰中</span>的灵魂是有可能保有它的身份的，从远处指导或是启发信徒。<span class="GramE">银焰教会</span>将泰拉</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·麦伦<span class="GramE">称为银焰之</span>声，她立于永恒于死亡之间，引导信徒走向光明。然而，加什卡拉</span><span style="font-family:等线">和<span class="GramE">羽蛇</span>教派在泰拉</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·麦伦被供奉</span><span style="font-family:等线">之前很久就已经存在了，他们有自己的<span class="GramE">银焰英雄</span>的之声引导着这些文明的忠实信者们。</span></p>
+<h5><span style='font-family:"微软雅黑",sans-serif'>诸恶有别</span><span lang="EN-US">The
+hierarchy of Evil </span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰赋予</span></span><span style="font-family:等线">了凡人对抗邪恶的力量。但并非所有的邪恶都是同等的，对不同的威胁要有不同的应对手段。<span class="GramE">银焰教堂</span>对邪恶等级的排列如下</span><span lang="EN-US">:</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="19">邪恶之外源。</span><span style="font-family:等线">指各种形式的邪魔和<span class="GramE">异怪</span>，这些是黄泉巨龙凯博尔的子嗣。这些存在本质上是非自然的，而且天生恶毒</span><span lang="EN-US">;</span><span style="font-family:等线">甚至他们的存在也被视为对世界有害。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="19">邪恶之造物。</span><span style="font-family:等线">这些曾经是艾伯伦的本地生物已经被外界存在的力量腐蚀了。不死生物和<span class="GramE">兽化</span>人是最明显的例子，这类无辜者被变成了怪物。与不朽王庭的信徒们观点一样，<span class="GramE">银焰教会</span>坚持认为不死生物天生就是非自然的，而且单是他们的存在本身都是对生者有害的。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="19">天生邪恶者。</span><span style="font-family:等线">这是名单上争议性最大的一项，分类标准这取决于怪物们的心智</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——即生而邪恶的艾伯伦本地生物。在过去，教会把美杜莎、鸟身女妖、巨魔以及类似的生物归为这一类，声称这些生物的<span class="GramE">罪并非</span>其出身，而是因为它们成为了超自然邪恶的力量的载体从而对无辜者构成威胁。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="19">自甘堕落者。</span><span style="font-family:等线">这包括所有生来无辜但选择堕入邪道的类人生物。因为这些人本质上不是邪恶的，信徒的目标应该是尽可能地引导他们回归光明。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="19">心存邪念者。</span><span style="font-family:等线">每一个<span class="GramE">追随银焰的</span>人都必须认识到自己作恶的可能：只有认识到它，才能防范它。<span class="GramE">焰中影</span>的耳语永不停歇，忽视这种威胁是傲慢和愚蠢的。</span></p>
+<p class="MsoNormal"><span style="font-family:等线">邪恶<span class="GramE">的异界存在</span>和它们的造物应不吝用利刃<span class="GramE">与咒法</span>以敌之。这即<span class="GramE">是银焰的</span>宗旨：保护无辜者免受这些存在的威胁。当这种邪恶势力出现时，<span class="GramE">银焰的</span>追随者们会把所有分歧搁置到一边，团结一致直到<span class="GramE">邪恶被</span>打败：这在终<span class="GramE">末战争</span>中就可以看到。在那时，有的圣堂武士向不同的国家效忠，但会联合起来应对超自然的威胁。如果有可能通过非暴力的方式消除威胁</span><span lang="EN-US">——</span><span style="font-family:等线">比如<span class="GramE">治愈兽化人</span>的诅咒而不是杀死它</span><span lang="EN-US">——</span><span style="font-family:等线">那是可以被接受的，甚至值得称赞的。但保护无辜者永远是最优先的事项，这就是为什么<span class="GramE">银焰大</span>清洗把重点放在<span class="GramE">消灭兽化人身</span>上，因为圣堂武士很少有资源去捕获并<span class="GramE">治疗兽化人</span>。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">对于那些自甘堕落或是心存恶念的人，<span class="GramE">银焰教会</span>倡导<span class="GramE">应事罚以</span>教。虽然圣堂武士们拿起武器<span class="GramE">对抗非</span>自然的邪恶，但圣职者们的最终目的是引导世人走向光明。保护无辜者的安全是最优先的事项。任何自甘堕落的人都可能被说服忏悔从良，<span class="GramE">银焰鼓励</span>其追随者们对所有自然生物的都应怀着同情和怜悯采取行动。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">在过去，教会认为巨魔、鸟身女妖、蠕虫以及类似的生物是天生邪恶的，所以无论遇到什么情况，圣殿武士都会消灭它们。随着卓<span class="GramE">姆</span>的崛起，<span class="GramE">萨拉释克家族</span>带来了怪物佣兵，科瓦雷人了解到这些生物的天性并不比人类或矮人更邪恶。最终<span class="GramE">由银焰守护</span>者来对这些事来做出定夺</span><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——就像一位过去的守护者所裁定的那样：艾伦诺</span><span style="font-family:等线">的不死生物并不是邪恶的非自然生物。在</span><span lang="EN-US">YK992</span><span style="font-family:等线">年，守护者拉维拉</span><span lang="EN-US" style="mso-bidi-font-family:
+Calibri">·</span><span style="font-family:等线">泰戈尔裁定教会需要重新评估天生邪恶者的分类，而圣堂武士应该判断有问题的生物的行为，并<span class="GramE">从银焰之</span>声寻求指导。从那时起，枢机主教议会就一直在争论卓<span class="GramE">姆</span>的地位，但守护<span class="GramE">者黛兰</span>还没有对此事做出最终裁决。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">加什卡拉，羽蛇教派，和其他派系都有自己的传统，每一个都有相同的核心<span class="GramE">准条<span lang="EN-US" style='font-family:"Calibri",sans-serif;mso-bidi-font-family:"Times New Roman"'>——</span>银焰是</span>一件工具，以让善良的人能够有力量对抗邪魔和非自然的恐怖生物。尽管这些派系共享着相似的信条，但是这个邪恶的分级是<span class="GramE">由银焰守护</span>者根据<span class="GramE">瑟</span>雷恩教会的教义所制定的。</span></p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt">
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
+<td style="width:426.1pt;background:#E7E6E6;padding:
+  0cm 5.4pt 0cm 5.4pt" valign="top" width="568">
+<p class="MsoNormal"><b><span lang="EN-US">53</span></b><b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">页边栏：天界生物与银焰</span><span lang="EN-US"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+  mso-hansi-font-family:Calibri;color:black;mso-color-alt:windowtext">银焰是</span></span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">艾伯伦本位面的产物。如果你信仰<span class="GramE">银焰且</span>打算施法召唤一个与你所接触的<span class="GramE">银焰力量</span>本源相关<span class="GramE">的异界盟友</span>或者与之尝试沟通。回应你的可能会是一条羽蛇，你也可能<span class="GramE">与银焰之</span>声——泰拉·麦伦的灵魂对话，不过现在的她已经<span class="GramE">与银焰密不可分</span>，而不仅仅只是一个幽灵。召唤天界生物一般召唤出来的会是羽蛇，祂们的精华届时将暂时从<span class="GramE">银焰中</span>分离直到完成祂们的任务。<span class="GramE">异界誓盟能够招</span>来更为强大的天界生物，但祂们并非来自其他位面的存在。他们可能使用天使的数据面板，但他们是由<span class="GramE">银焰本身</span>的纯净之光组成，当他们的任务完成后就会回归<span class="GramE">到银焰之中</span>。</span></p>
+</td>
+</tr>
+</table>
+<h5><span style='font-family:"微软雅黑",sans-serif'>异端</span><span lang="EN-US">Heresy</span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰教堂</span></span><span style="font-family:等线">仅代表<span class="GramE">了银焰信仰</span>的一个派系。它是建立在泰拉</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·麦伦的教义之上的，但是在她的获得幻象——引导她拥抱<span class="GramE">银焰并</span>召集军队——到她为打败贝尔·沙洛而做出的最后牺牲之间只有不到一年的时间。因此确立了教会大部分传统和教义的话语并非她亲口所述，而是出自当年与她并肩作战的人们。这些都是由从未见过她的祭司们在岁月的长河里提炼出来的——随着时间流逝，人们相信这些祭司们是<span class="GramE">受银焰之</span>声所引导的。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰守护</span></span><span style="font-family:等线">者是<span class="GramE">与银焰大教堂</span>维系于一体的。守护者的力量来<span class="GramE">基于银焰堡</span>，这里所留存<span class="GramE">的圣焰之</span>泉标示着泰拉</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·麦伦为修复魔君贝尔·沙洛的束缚而献出生命时的地点。有些人误以为<span class="GramE">这个圣焰之</span>泉<span class="GramE">是银焰本身</span>。然而这<span class="GramE">只是银焰用以</span>将其伟力赐予这世上每一个<span class="GramE">寻求银焰指引</span>之人的焦点。</span><span class="GramE"><span style="font-family:
+等线">银焰本身</span></span><span style="font-family:等线">远比那个在教堂里的火花要宽广</span><span lang="EN-US">——</span><span style="font-family:等线">它的力量在艾伯伦上延伸，束缚着每一片大陆上的魔君。<span class="GramE">银焰教会歌颂银焰守护</span>者<span class="GramE">既是银焰之</span>声的容器又是赐予<span class="GramE">银焰力量</span>的通道。然而，其他文明的信奉者</span><span lang="EN-US">——</span><span style="font-family:等线">比如邪魔荒原的加什卡拉</span><span lang="EN-US">——</span><span style="font-family:等线">认为守护者不过是一位拥有强大力量的祭司而已。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰教会</span></span><span style="font-family:等线">很大程度上并不在意如加什卡拉这样的组织的不同信仰。在教会的眼中，这些北方<span class="GramE">的兽人是</span>一群老古董罢了，他们不寻常的信仰不会威胁到五国的信仰。同样，枢机主教议会</span><span lang="EN-US">(Council of Cardinals)</span><span style="font-family:等线">也没有采取任何行动压制纯净之焰的极端信仰，甚至任命身为清教徒的大主教达瑞兹努为<span class="GramE">瑟</span>奥利斯特的总督。在某种程度上，这是因为纯净之<span class="GramE">焰通过终末战争</span>已经自成一派。同时<span class="GramE">瑟</span>雷恩的枢机主教们几乎没有能力将自己的意志强加给这些安黛尔的爱国者。达瑞兹努的任命安排也是为了确保纯净之焰的追随者能够<span class="GramE">承认银焰守护</span>者的权威。尽管教会到目前为止没有对纯净之<span class="GramE">焰采取</span>任何行动，但守护<span class="GramE">人黛拉</span>对这个教派深感困扰，并正在考虑解决这个问题的最佳方法。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">也曾经有<span class="GramE">过出现</span>异端信仰导致教会分裂的时候，其中最臭名昭著的就是</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">“双守护者时代”。在</span><span lang="EN-US" style="mso-bidi-font-family:Calibri">YK</span><span lang="EN-US">497</span><span style="font-family:等线">年，一个自称梅丽塞</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">·麦伦</span><span style="font-family:等线">的农家女对守护者凯拉</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·丹斯</span><span style="font-family:等线">对<span class="GramE">银焰堡和银焰</span>教会的控制权提出挑战。梅丽塞声称，泰拉</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·麦伦</span><span style="font-family:等线">已经预示她是泰拉的直系后裔和合法守护者。她挑战了许多教会的教义，声称它们已经偏离<span class="GramE">了银焰的</span>教义。令人震惊的是，与守护者丹斯一样，梅丽塞在<span class="GramE">银焰堡</span>也能<span class="GramE">运用圣焰之</span>泉的力量，创造出丹斯之下的神职者都难以匹敌的神迹。这引发了长达数年的深度割裂，直到梅里西丝最终被发现<span class="GramE">是焰中</span>影之手</span><span lang="EN-US">——</span><span style="font-family:等线">不是银焰，而是<span class="GramE">在银焰堡中</span>增强她力量的魔君贝尔·沙洛</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。因为害怕她的死会让贝尔·沙洛选择一个新的反守护者，梅丽塞没有被处死，</span><span style="font-family:等线">她被石化并被放置在恐惧堡里，直到今天。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><span style="mso-tab-count:1">         </span></span><span style="font-family:等线">往近了说，教会在</span><span lang="EN-US">YK914</span><span style="font-family:等线">年还有过一次分裂，当看守<span class="GramE">瑟</span>拉因（</span><span lang="EN-US">Serrain</span><span style="font-family:等线">）被赋予统治<span class="GramE">瑟</span>雷恩国家的世俗权力。当许多人都在颂扬建立在教会崇高原则之上的王国构想时，也有很多人</span><span lang="EN-US">——</span><span style="font-family:等线">甚至在<span class="GramE">瑟</span>雷恩也有一些人</span><span lang="EN-US">——</span><span style="font-family:等线">认为赋予枢机主教和守护者执掌政治权力会让教会从其本应的使命上分心，并诱发腐败。这为在终<span class="GramE">末战争</span>中与<span class="GramE">瑟</span>雷恩人交战的外籍圣殿武士提供了理由；他们争辩道：他们继续尊重守护者的精神权威，但教会不应该统治一个统一<span class="GramE">的伽利法</span>。风暴领的祭司们甚至谴责了神权政治和守护者<span class="GramE">瑟</span>拉因。在这一分裂之后，风暴领正式与<span class="GramE">银焰堡</span>被割席；<span class="GramE">银焰堡</span>将不会为他们提供任何帮助也不承认他们的牧师在教会等级体系中的地位。因此，对于那些坚信<span class="GramE">银焰原则</span>但质疑其教义的人来说，<span class="GramE">风暴领已成为</span>一个避难所。至于神权政治和纯净之<span class="GramE">焰之间</span>的分歧是否会扩大，或是信徒们是否会保持团结，这要由</span><span lang="EN-US">DM</span><span style="font-family:等线">来决定。总是有新的启示或信仰的空间来为信徒创造一条新的道路去<span class="GramE">践行</span>。</span></p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="border-collapse:collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt">
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
+<td style="width:426.1pt;background:#E7E6E6;padding:
+  0cm 5.4pt 0cm 5.4pt" valign="top" width="568">
+<p class="MsoNormal"><b><span lang="EN-US">54</span></b><b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">页边栏：麦伦之泪</span><span lang="EN-US"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">关于麦伦之泪，<span class="GramE">最为让</span>世人接受的说法是：它是一个都市传说——某个隐藏<span class="GramE">在银焰教会</span>最深处的谍报暗杀组织，即便<span class="GramE">是银焰守护</span>者和主教们也对此一无所知。传言，泰拉·麦伦预见到<span class="GramE">了焰中</span>之影的威胁。在与贝尔·沙洛战斗的前夜，泰拉命令她的心腹同伴萨米尔·凯斯（</span><span lang="EN-US" style="color:black;mso-color-alt:windowtext">Samyr Kes</span><span style="font-family:等线;color:black;mso-color-alt:windowtext">）监视即将成立的<span class="GramE">的银焰</span>教会中可能出现的邪魔腐化迹象</span><span lang="EN-US" style="mso-bidi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">——</span><span style="font-family:等线;color:black;mso-color-alt:windowtext">拯救那些仍可救赎之人，消灭那些无药可救之人。相信这个传说的人声称：是麦伦之泪的特工发现了梅丽塞</span><span lang="EN-US" style="mso-bidi-font-family:Calibri;color:black;mso-color-alt:
+  windowtext">·</span><span style="font-family:等线;color:black;mso-color-alt:
+  windowtext">麦伦所带来的威胁，并揭露了她是贝尔</span><span lang="EN-US" style="mso-bidi-font-family:
+  Calibri;color:black;mso-color-alt:windowtext">·</span><span style="font-family:
+  等线;color:black;mso-color-alt:windowtext">沙洛的代理人的真相。</span></p>
+<p class="MsoNormal"><span style="font-family:等线;mso-ascii-font-family:Calibri;
+  mso-hansi-font-family:Calibri;color:black;mso-color-alt:windowtext">由</span><span lang="EN-US" style="color:black;mso-color-alt:windowtext">DM</span><span style="font-family:等线;color:black;mso-color-alt:windowtext">来决定这个组织是否存在，或者它是否在很久以前就消亡了。如果萨米尔·凯斯（</span><span lang="EN-US" style="mso-bidi-font-family:Calibri;color:black;mso-color-alt:
+  windowtext">Samyr Kes</span><span style="font-family:等线;color:black;
+  mso-color-alt:windowtext">）还活着，他可能会对现今教会的腐败感到厌恶。除了与来自邪魔的腐化作斗争，麦伦之泪还可能盯上在<span class="GramE">布鲁兰的</span>贪婪牧师，又或者与安黛尔的极端教派纯净<span class="GramE">之焰作斗争</span>，甚至视<span class="GramE">瑟</span>雷恩的神权统治为对教会的腐化之源而尝试推翻它。品性高尚的</span><span lang="EN-US" style="mso-bidi-font-family:Calibri;color:black;mso-color-alt:windowtext">PC</span><span style="font-family:等线;color:black;mso-color-alt:windowtext">可能会被招募到这个组织中。或者当</span><span lang="EN-US" style="mso-bidi-font-family:Calibri;color:black;mso-color-alt:
+  windowtext">PC</span><span style="font-family:等线;color:black;mso-color-alt:
+  windowtext">的某个朋友</span><span lang="EN-US" style="mso-bidi-font-family:Calibri;
+  color:black;mso-color-alt:windowtext">——</span><span style="font-family:等线;
+  color:black;mso-color-alt:windowtext">实为<span class="GramE">背地里砂主的</span>走狗</span><span lang="EN-US" style="mso-bidi-font-family:Calibri;color:black;mso-color-alt:
+  windowtext">——</span><span style="font-family:等线;color:black;mso-color-alt:
+  windowtext">被麦伦之泪盯上时，混乱的抉择届时将随之而来。</span></p>
+</td>
+</tr>
+</table>
+<h5><span style='font-family:"微软雅黑",sans-serif'>腐败</span><span lang="EN-US">Corruption</span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰教会</span></span><span style="font-family:等线">有着崇高的理想，当它没能实现这些理想时，人们很容易找到理由抨击它。尽管教会总是存在腐败的可能性，但它常常被夸大了。关于腐败牧师的故事可能比正直牧师的故事更引人注目，因为正直的牧师只是呆在<span class="GramE">那里提供</span>帮助，但大多数牧师都在努力实现他们的原则</span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">——抵制内心的邪恶、以同情和<span class="GramE">同理心</span>对待他人、为共同利益而共同努力。关键不在于教会是一个根本上腐败的机构，而在于人无完人——因为他们并非完人，所以他们会被火焰中的阴影引入歧途，也可能屈服于骄傲或贪婪。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">在与腐败的信仰追随者打交道时，要考虑一下这是一种什么</span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">“腐败”，它从何而来。在<span class="GramE">布鲁兰<span style="mso-ascii-font-family:等线;mso-hansi-font-family:
+等线">的</span></span></span><span style="font-family:等线">牧师和<span class="GramE">瑟雷恩</span>的审判官之间有一个相当大的区别，前者为金币而出卖祝福，而后者与邪恶战斗时的狂热迫使他们变得残忍。</span></p>
+<p class="MsoNormal"><span style="font-family:等线">狂热是最常见的腐败形式，尤其是在圣骑士和神职人员中。狂热者致力于信仰的原则，但在他们寻求与世界上的恶势力作斗争时，却忽视了对心中之恶抱以同情的必要性。这包括那些从事不必要的残忍行为的人，特别是在与那些堕入邪道的人打交道时。狂热者对黄金或权力没有兴趣，他们冒着生命危险去保护他人；他们只是能够以更大的善的名义为残忍和邪恶的行为辩护。这是纯净之焰的主要罪行，可狂热者可不止他们，你在哪都能遇到狂热者。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">机会主义者会试图利用他们的宗教权威为自身谋取利益。这通常包括对应该免费提供的服务收费，或者利用教会资源为无关的目的获取金钱或影响力。在<span class="GramE">萨</span>恩，档案学者伊莎娜</span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">·莫尔（</span><span lang="EN-US">Ythana Morr</span><span style="font-family:等线">）经常被指控使用圣堂武士作为雇佣兵，为当地的商人站台。通常来说，这反映了一种最基本的失信，因此，机会主义者很少使用神术魔法。如果一个机会主义者能够<span class="GramE">引导银焰的</span>力量，这表明他们能够以某种方式证明这些相互冲突的概念</span><span lang="EN-US">——</span><span style="font-family:等线">他们真的相信自己的行为是正义的，服务于更大的利益，即使这些行为只是碰巧中流了神父的腰包。这样的人可能觉得他们需要更大的财富或影响力来帮助他人，或者认为他们是在以牙还牙，通过政治或经济手段教训恶党。在终<span class="GramE">末战争</span>之前，机会主义者通常出现在布鲁兰，但是随着神权政治的兴起<span class="GramE">瑟</span>雷恩也产生了很多机会主义者。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">变节是最糟糕的腐化形式</span><span lang="EN-US">:</span><span style="font-family:等线">牧师或圣堂武士自知其在为<span class="GramE">砂主或焰中</span>影服务，却仍装是作光的仆人。变节者可能会像一位虔诚的牧师一样</span><span lang="EN-US">——</span><span style="font-family:等线">就像梅丽塞</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·麦伦</span><span style="font-family:等线">在双守护<span class="GramE">者时期</span>所做的那样</span><span lang="EN-US">——</span><span style="font-family:等线">但他们的神力之<span class="GramE">源变成了焰中</span>影。这仍需要坚定的信念，但那些变节者奉行截然不同的原则。这种腐败最普遍的形式是对低语之焰的崇拜，这在</span><span lang="EN-US">“</span><span style="font-family:等线">黄泉巨龙会</span><span lang="EN-US">”</span><span style="font-family:等线">一节中有描述。但是，变节者也可能是孤独的人，他们独自拥抱内心的邪恶。当你在与<span class="GramE">变节恶党打交道</span>时，想想是什么让他们拥抱黑暗而非光明。是<span class="GramE">砂主曾</span>向他们许诺过无价之宝吗？是他们相信凡人是有根本缺陷的吗？还是他们觉得贝尔·沙洛所倡导的残忍才是人性的本态？又或者是他们认为自己才是逸闻里的英雄？</span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif'>信仰之路</span><span lang="EN-US">Paths
+of the faith</span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">银焰远比</span></span><span style="font-family:等线">人类文明更古老。<span class="GramE">银焰教会</span>是这个信仰在科瓦雷大陆上的主要表现，但是你可以<span class="GramE">成为银焰的</span>追随者而不需要与教会有联系。在创造</span><span lang="EN-US">PC</span><span style="font-family:等线">或</span><span lang="EN-US">NPC</span><span style="font-family:等线">时，考虑以下选项，或者如果你对扮演一个变节角色感兴趣，请参考本章后面的</span><span lang="EN-US">“</span><span style="font-family:等线">黄泉巨龙会</span><span lang="EN-US">”</span><span style="font-family:等线">章节。</span></p>
+<h5><span style='font-family:"微软雅黑",sans-serif'>共同的信仰</span></h5>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">圣堂武士、修士和牧师<span class="GramE">都是银焰教堂</span>正式等级的一部分。但你可以成为牧师而不是<span class="GramE">侍</span>僧。你也可以成为一个<span class="GramE">期望银焰能助</span>你瞄得更准的游侠，即便这<span class="GramE">在银焰信仰</span>里并无先例。<span class="GramE">瑟</span>雷恩的大多数平民都属于这一类</span><span lang="EN-US">:</span><span style="font-family:等线">他们献身于信仰，但不是信仰结构的一部分。<span class="GramE">银焰在</span>日常生活中扮演什么角色</span><span lang="EN-US" style="mso-bidi-font-family:
+Calibri">?</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">有几条基本原则为虔诚的信众提供指引。作为一个农民，你可能没有力量去对抗外来的邪恶，但你可以随时防范内心的邪恶，帮助你周围的人选择光明而非黑暗。教会教义敦促信徒们带着<span class="GramE">同理心</span>和同情心行动，试着理解你周围人的烦恼，减轻他们的负担，不以愤怒回应愤怒，将暴力作为最后的手段。并不是每个人都能实现这些理想，<span class="GramE">像终末战争</span>时期本身就是一个暴力的时代。但信仰仍然敦促每个人抵制内心的邪恶，而拥抱慷慨和同情的美德。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">如前所述，教会也强调团结以对抗超自然的威胁。这个世界充满危险，那些有力量的人应该用它来保护无辜的人。<span class="GramE">瑟</span>雷恩的每个村庄都有一支民兵，准备保卫村落不受非自然力量的侵害。射箭是信徒中常见的宗教活动；有人说，这些有着虹彩箭羽的箭<span class="GramE">象征着羽蛇</span>在保护无辜者，但从实用性出发这种活动也让信徒尽可能地抵御险情。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span class="GramE"><span style="font-family:等线">瑟</span></span><span style="font-family:
+等线">雷恩教会承认等级制度的价值，但是教会不能授予神职人员或圣武士的神力</span><span lang="EN-US">——</span><span style="font-family:等线">这些力量来自于信仰和崇高的抱负。因此，你可以扮演一个不与教会有任何正式联系而<span class="GramE">从银焰获取</span>力量的角色。主要的问题是为什么</span><span lang="EN-US">——</span><span style="font-family:等线">如果你是圣武士，为什么你决定不成为圣堂武士</span><span lang="EN-US">?</span><span style="font-family:等线">你觉得等级制度腐败吗</span><span lang="EN-US" style="mso-bidi-font-family:Calibri">?</span><span style="font-family:
+等线">或者你只是觉得你被召唤去走一条不一样的道路</span><span lang="EN-US">?</span></p>
+<h4><span style="font-family:等线">教会组织结构</span><span lang="EN-US">The Church
+Hierarchy</span></h4>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">背景是创建一个角色的简单方法，<span class="GramE">在银焰教会</span>的阶级中有一个确定的位置。牧师和修士通常以<span class="GramE">侍</span>僧为背景，而士兵背景的军衔特征可以反映你作为圣殿武士的军衔。你还在积极地为教会服务吗</span><span lang="EN-US">?</span><span style="font-family:等线">或者你已经在荣耀的事<span class="GramE">奉之后</span>离开你的职责吗</span><span lang="EN-US">?</span><span style="font-family:等线">《艾伯伦：从终末战争中崛起》将圣堂武士作为宗教代理人的一个选择以探讨你的整个冒险小队可以代表教会与邪恶作斗争的想法。然而，你也可以单独服务。<span class="GramE">银焰的</span>修道士们被派往在世界各地游走，通过怜悯和慈善的行为与邪恶势力作斗争；如果你是一名拥有圣武士或牧师职业能力的修士，那当然包括保护无辜的人不受超自然邪恶的伤害。你可以是一个退役后继续以一个冒险家的身份对抗邪恶的圣堂武士，或者你可以是一个被赋予了与冒险家<span class="GramE">们目标</span>一致的特殊任务的圣堂武士，你还可以会被绑在银白<span lang="EN-US">Argentum</span>组织的一员，这是最初的任务是为了寻找和销毁危险的魔法物品，但后来成为了教会的间谍机构的组织。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线">在塑造一个与等级制度有联系的人物时，考虑一下你把教会的哪个派系称为家，以及这是如何影响你的三观的。如果你在<span class="GramE">银焰堡</span>受过训练，你很可能是枢机主教和神权政治的坚定支持者。另一方面，如果你来自布鲁兰，你平时可能会更务实一些，前提是你并不是个烂透了的家伙。作为一个在<span class="GramE">萨</span>恩供职的神职人员，你可以接受罪犯背景而不是<span class="GramE">侍</span>僧，你在教会不再有很大的影响力，但你仍有位于阶级底层朋友。</span></p>
+<h5><span class="GramE"><span style='font-family:"微软雅黑",sans-serif'>焰佑英雄</span></span><span lang="EN-US">The Flametouched Folk Hero</span></h5>
+<p class="MsoNormal"><span style="font-family:等线">你不必皈依<span class="GramE">银焰才能</span>从它那获得力量。提拉</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·麦伦曾是虔诚于杜·哈拉的圣武士，羽蛇将她带到<span class="GramE">上银焰之</span>道。从本质上来说，<span class="GramE">银焰是</span>一个神力之源，它能赋予任何想要在超自然邪恶势力下保护无辜者的人力量。如果你是一名圣武士，当你为了保护一群陌生人免受食尸鬼的攻击而<span class="GramE">以身犯险</span>时，你的力量可能会自然涌现。又或者你听到了一个声音指引着你走上美德之路：</span><span style="font-family:等线">那<span class="GramE">是银焰之</span>声吗？又或者是羽<span class="GramE">蛇希望</span>你去完成某项使命？总的来说，即便跟教会没有任何关系，你都可以<span class="GramE">成为银焰的</span>勇士，你甚至可以对这个信仰一无所知，或是你不承认它是你神力之源。对神学研究者不难发现通过你使用力量是的表现分析出你的力量之源：你的法术可能会闪耀着银色的光辉、你施放的信仰守卫法术效果可能会是一条羽蛇。你只是不知道你神力之源，还是说你对它有着与众不同的称呼或是见解？</span></p>
+<h5><span style='font-family:"微软雅黑",sans-serif'>加什卡拉</span><span lang="EN-US">The
+Ghaash<span class="GramE">’</span>kala</span></h5>
+<p class="MsoNormal"><span style="font-family:等线">加什卡拉的传承不仅比现代<span class="GramE">的银焰教会</span>更古老，它甚至比人类文明本身更为古老。加什卡拉的勇士和祭司守望着辽阔的峡谷网，将恶魔荒原与科瓦雷的其他地区隔绝开来，以防止邪魔和<span class="GramE">魔裔</span>蛮族残害无辜者。加什卡拉起初是由<span class="GramE">半兽人组成</span>，但经过几个世纪的发展，有不少其他种族也被这一神圣的职责所吸引。任何种族的化外之民或隐士</span><span lang="EN-US">——</span><span style="font-family:等线">尤其是<span class="GramE">半兽人</span></span><span lang="EN-US">——</span><span style="font-family:等线">都可以宣称他们服务于加什卡拉。</span></p>
+<p class="MsoNormal"><span style="font-family:等线">加什卡拉崇拜卡洛克</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·沙什——</span><span lang="EN-US">“</span><span style="font-family:等线">束缚之焰</span><span lang="EN-US">”</span><span style="font-family:等线">。虽然他们与其他形式<span class="GramE">的银焰分支</span>一样遵循同样的原则，但他们是在一片恶土之上进行着一场残酷且无休止的战争。因此，他们的着重点更多的是对抗超自然的邪恶，而不是用怜悯来引导人类走向光明。即便如此，他们也是在用生命保护着所有的世人不受来自恶魔荒原的邪恶所害。他们通常会觉得</span><span lang="EN-US">“</span><span style="font-family:等线">南方</span><span lang="EN-US" style="mso-bidi-font-family:Calibri">”——</span><span style="font-family:等线">即恶魔荒原以南的所有地方</span><span lang="EN-US" style="mso-bidi-font-family:Calibri">——</span><span style="font-family:等线">的人软弱而天真，但他们仍然认为保护这些无辜者不受邪恶侵害是他们的职责。他们不在乎自己的永恒守望是否得到世人的认可：因为这是存亡之战。</span></p>
+<p class="MsoNormal"><span style="font-family:等线">作为一个与加什卡拉有关的角色，思考一下你为什么要放下你的职责去南方冒险。你有什么特别的使命吗？是神圣的幻象指引你？或者你是否因为某些原因而被驱逐出了荒原</span><span lang="EN-US">——</span><span style="font-family:等线">如果是的话，你是否和你的伙伴们交代了你的背景？</span></p>
+<h5><span style='font-family:"微软雅黑",sans-serif'>纯净之焰</span><span lang="EN-US">The
+Pure Flame</span></h5>
+<p class="MsoNormal"><span class="GramE"><span style="font-family:等线">作为银焰教会</span></span><span style="font-family:等线">的一个极端派系，纯净之焰在</span><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">“大清洗”中崛起。经受了<span class="GramE">在兽化人</span>的恐怖支配下生活了数十载的安黛尔人<span class="GramE">把银焰看作</span>为带来解放他们的武器，可作为一种在战斗中诞生的信仰，他们<span class="GramE">对银焰的</span>原则有一种扭曲的看法。<span class="GramE">银焰的</span>核心原则是保护无辜者，但那些信奉纯净之焰的人将其视为惩戒邪恶的工具。他们眼里没有宽容：</span><span style="font-family:等线">虽然他们接受了魔君和<span class="GramE">焰中影会</span>驱使人们作恶的观点，但他们关注的不是用怜悯之心对待他们，而是把他们连同他们的邪恶一并燃尽。</span></p>
+<p class="MsoNormal"><span style="font-family:等线">纯净之焰的主要特点是这种残暴的正义。绝不与邪恶妥协，不为邪恶分级：任何恶行都是不能容忍的。大多数纯净之焰的追随者<span class="GramE">对银焰之</span>声特别忠诚，并相信守护者是一个神圣的存在。同时他们当中许多人也不信任<span class="GramE">瑟</span>雷恩的枢机主教，如果守护者做出违背他们信仰的宣言，他们很快就会将其归咎于腐败的枢机主教。在<span class="GramE">瑟</span>奥利斯特，大主教达瑞兹努呼吁集结力量占领<span class="GramE">银焰堡</span>以</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">“</span><span style="font-family:等线">解放守护者</span><span lang="EN-US">”</span><span style="font-family:等线">，尽管纯净<span class="GramE">之焰既没有</span>力量也没有资源<span class="GramE">或是练度来</span>完成这件事情。</span></p>
+<p class="MsoNormal"><span style="font-family:等线">纯净之焰的成员是无慈悲，偏执且暴力的，他们拒绝同情的信仰原则，不承认火光之下人人平等。然而，由于他们狂热地献身于与邪恶的战斗，他们在对抗真正的超自然威胁还是会为冒险者提供援助。纯粹之<span class="GramE">焰成员</span>通常是</span><span lang="EN-US">NPC</span><span style="font-family:等线">，而不是</span><span lang="EN-US">PC</span><span style="font-family:等线">，因为他们不妥协和无慈悲的天性可能引起团队内讧。也就是说，</span><span lang="EN-US">PC</span><span style="font-family:等线">可能是一个渴望自我救赎的前纯净之焰，或者可能是一个<span class="GramE">不</span>认同纯净之焰理念并且想要开拓视野安黛尔年轻人。</span></p>
+<h5><span style='font-family:"微软雅黑",sans-serif'>羽蛇教派</span><span lang="EN-US">Serpent
+Cults</span></h5>
+<p class="MsoNormal"><span style="font-family:等线">羽蛇教派是<span class="GramE">银焰最</span>古老的传统，尽管世人对他们一无所知的。羽蛇教派所崇拜的<span class="GramE">不是银焰本身</span>，而是无数牺牲的羽蛇，是祂们的牺牲<span class="GramE">带来银焰的</span>存在。常见的<span class="GramE">神话里羽蛇</span>是由西伯瑞斯为了束缚凯博尔的邪恶而呼出的最后一丝气息转化二来。这个教派坚持认为，<span class="GramE">银焰是</span>在羽蛇牺牲祂们自身存在用以运用上层位面的力量以束缚魔君们时形成的，有研究表明此话不虚，尽管它并不<span class="GramE">在银焰教会</span>的教义通典里。羽蛇教派<span class="GramE">聆听着羽蛇</span>的引导，而不是<span class="GramE">崇拜银焰守护</span>者<span class="GramE">或是银焰之</span>声。会有一些羽<span class="GramE">蛇为了</span>充当守卫者或执行特定任务而<span class="GramE">与银焰分离</span>，羽蛇也有可能暂时充当灵魂导师：泰拉</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">·麦伦就是这种情况，与<span class="GramE">银焰有</span>联系的阿斯莫的出现也可能与之相关。</span></p>
+<p class="MsoNormal"><span style="font-family:等线">作为一个羽蛇教派的成员，选择隐士背景可以是一个很好的选择，这体现在你拥有<span class="GramE">关于银焰的</span>秘密知识，而现代教会对此一无所知。如果你打算和<span class="GramE">羽蛇</span>教派扯上关系，建议你跟你的</span><span lang="EN-US">DM</span><span style="font-family:等线">商量一下确定一下这个教派的规模，起源和影响力。是刀锋沙漠（</span><span lang="EN-US">Blade Desert</span><span style="font-family:等线">）六贤？还是与苏拉沙卡（</span><span lang="EN-US">Shulassakar</span><span style="font-family:等线">）</span><span lang="EN-US">——</span><span style="font-family:等线">一个在数千年里守望着阴影势力的拥有彩虹羽毛<span class="GramE">的蛇人族群</span>有关？你有什么特殊的使命吗？还是说尽管你有不同寻常的信仰，但你冒险的原因与之无关？</span><span lang="EN-US"><o:p></o:p></span></p>
+</div>
+EndFragment
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '银焰：守护无辜'}, '*');
+        }
+</script>
+</body>
+</html>

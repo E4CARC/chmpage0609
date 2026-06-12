@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>底栖魔鱼:最黑暗的深处</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:Arial;
+	color:#C00000;
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 6 字符1";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:130%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 字符";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:none;
+	mso-outline-level:1;
+	font-size:15.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.a1
+	{mso-style-name:"标题 字符";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:标题;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.10
+	{mso-style-name:"样式1 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:样式1;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.11, li.11, div.11
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"样式1 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:样式4;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:#5B9BD5;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+span.20
+	{mso-style-name:"样式2 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:样式2;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.21, li.21, div.21
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"样式2 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a2, li.a2, div.a2
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a3, li.a3, div.a3
+	{mso-style-name:边栏正文内容;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.30
+	{mso-style-name:"样式3 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:样式3;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.31, li.31, div.31
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"样式3 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.a4
+	{mso-style-name:"译注 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:译注;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	color:#548235;
+	mso-themecolor:accent6;
+	mso-themeshade:191;
+	mso-style-textfill-fill-color:#548235;
+	mso-style-textfill-fill-themecolor:accent6;
+	mso-style-textfill-fill-alpha:100.0%;
+	mso-style-textfill-fill-colortransforms:lumm=75000;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;}
+p.a5, li.a5, div.a5
+	{mso-style-name:译注;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"译注 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Arial;
+	color:#548235;
+	mso-themecolor:accent6;
+	mso-themeshade:191;
+	mso-style-textfill-fill-color:#548235;
+	mso-style-textfill-fill-themecolor:accent6;
+	mso-style-textfill-fill-alpha:100.0%;
+	mso-style-textfill-fill-colortransforms:lumm=75000;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.61
+	{mso-style-name:"标题 6 字符1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("4-雷霆海-底栖魔鱼.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("4-雷霆海-底栖魔鱼.files/header.htm") fcs;
+	mso-endnote-separator:url("4-雷霆海-底栖魔鱼.files/header.htm") es;
+	mso-endnote-continuation-separator:url("4-雷霆海-底栖魔鱼.files/header.htm") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-even-header:url("4-雷霆海-底栖魔鱼.files/header.htm") eh1;
+	mso-header:url("4-雷霆海-底栖魔鱼.files/header.htm") h1;
+	mso-even-footer:url("4-雷霆海-底栖魔鱼.files/header.htm") ef1;
+	mso-footer:url("4-雷霆海-底栖魔鱼.files/header.htm") f1;
+	mso-first-header:url("4-雷霆海-底栖魔鱼.files/header.htm") fh1;
+	mso-first-footer:url("4-雷霆海-底栖魔鱼.files/header.htm") ff1;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>底<span class="GramE">栖魔鱼</span></span><span lang="EN-US">:</span><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:
+Arial;mso-hansi-font-family:Arial'>最黑暗的深处</span><span class="SpellE"><span lang="EN-US">Aboleths</span></span><span lang="EN-US">: The Darkest Depths<o:p></o:p></span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">底<span class="GramE">栖魔鱼</span>是一种长着触手的鳗鱼状怪物，体型巨大，长度可达</span><span lang="EN-US">20</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">尺。它们分泌出浓稠的灰色粘液，迫使</span><span lang="EN-US">“</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">自然</span><span lang="EN-US">”</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">生物转变为底<span class="GramE">栖魔鱼</span>的粘糊糊的水生仆人</span><span lang="EN-US">_</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">必须始终保持半透明的皮肤湿润才能生存。</span>
+<span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">它们还拥有强大的灵能能力，能够通过心灵感应探测生物的最大愿望，并迷惑被其粘液转化的类人生物。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">底<span class="GramE">栖魔鱼</span>是在恶魔时代被称为影中潜伏者</span><span lang="EN-US">the Lurker in
+Shadow</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">的霸主创造的。他们是恶魔的仆人，但本身并不是恶魔，也不是不灭者。然而，它们将自己的知识和经验代代相传。</span>
+<span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">底<span class="GramE">栖魔鱼</span>的思想是古代知识的宝库，能够清晰地回忆起史前的时刻。他们耐心而复杂地策划了亿万年。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>最黑暗的深处</span><span lang="EN-US">The Darkest Depths<o:p></o:p></span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US">There are places where even <span class="SpellE">sahuagin</span> fear
+to swim. Like all the overlords, the Lurker in Shadow couldn’t be destroyed,
+only imprisoned. It’s bound in Khyber, deep below the center of the Thunder
+Sea. But there are passages to its prison spread across the region, in vast
+rifts and lightless tunnels. The servants of the Lurker linger in these places,
+building their strength and watching the world above.<o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">有些地方连沙华<span class="GramE">鱼人</span>都不敢涉足。和所有霸主一样，影中潜伏者无法被摧毁，只能被囚禁。它被束缚在<span class="GramE">凯</span>伯尔，<span class="GramE">雷霆海</span>中心深处。但通往监狱的通道遍布整个地区，在巨大的海底裂缝和黑暗的海沟中。潜伏者的仆从在这些地方徘徊，增强力量并观察上方的世界。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span lang="EN-US">The chief servants of the Lurker in Shadow are the <span class="SpellE">aboleths</span>. Though driven from the sea itself, they’ve
+maintained a shadow empire in the tunnels below the seabed. Across eras,
+they’ve collected their subjects—<span class="SpellE">locathah</span>, <span class="SpellE">sahuagin</span>, withered storm giants, people of the Five Nations
+stolen from their ships. Those <span class="SpellE">aboleths</span> with little
+interest in humanoids instead craft aberrations and monstrosities, like the <span class="SpellE">chuul</span>. While the <span class="SpellE">aboleths</span> have no
+direct ties to the Lords of Dust, there are fiends among their allies—shadow
+demons and other spirits and aberrations created by the Lurker in Shadow. The <span class="SpellE">aboleths</span> also possess untold riches and powerful artifacts
+from the Age of Demons—tools they can use to arm their allies, or to motivate
+with greed and bribery when direct mental domination isn’t an option.<o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">影中潜伏者的主要仆人是<span class="GramE">底栖魔鱼</span>。尽管他们被赶出了大海，但他们仍然在海沟中维持着一个影子帝国。跨越多个时代，他们收集了自己的臣民</span><span lang="EN-US">——</span><span class="GramE"><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">洛</span></span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">卡<span class="GramE">鱼人</span>、沙华<span class="GramE">鱼人</span>、风暴巨人、从船上被偷走的五国人民。那些对类人生物不感兴趣的底<span class="GramE">栖魔鱼</span>反而会制造畸变体和怪物，<span class="GramE">比如甲伏怪</span></span><span class="SpellE"><span lang="EN-US">Chuul</span></span><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。虽然底<span class="GramE">栖魔鱼与砂主</span></span><span lang="EN-US">Lords of Dust</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">没有直接联系，但他们的盟友中有恶魔</span><span lang="EN-US">——</span><span class="GramE"><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">影魔</span></span><span lang="EN-US">shadow
+demons</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">和影中潜伏者创造的其他精魂或异怪。底<span class="GramE">栖魔鱼</span>还拥有来自恶魔时代的数不尽的财富和强大的神器</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">它们可以用其武装盟友，或者在无法直接进行精神控制时用贪婪和贿赂来激励。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>潜伏者偏爱的<span class="GramE">的</span>造物</span><span lang="EN-US">The Lurker's Favored Children<o:p></o:p></span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">底<span class="GramE">栖魔鱼服务</span>于暗影潜伏者的议程，渗透文明并扩展控制网。一旦他们对社群的操纵完成，他们经常会透露他们的设计，以进一步煽动偏执狂。对外异怪操纵的恐惧驱使社区分裂。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">底<span class="GramE">栖魔鱼</span>在过去曾多次崛起，利用这种恐惧循环在沙华<span class="GramE">鱼人</span>和巨人之间挑起战争以及无数其他冲突。在黑暗的几个世纪里，底<span class="GramE">栖魔鱼</span>一直统治着海洋</span><span lang="EN-US">——</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">尽管这些日子<span class="GramE">早在伽利法</span>崛起之前，而人类对这种威胁知之甚少。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>残忍的收集者</span><span lang="EN-US">Cruel Collectors<o:p></o:p></span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">就<span class="GramE">像砂主的</span>罗刹一样，当底<span class="GramE">栖魔鱼</span>不直接为霸主服务时，它们可以在自己的个人项目中找到乐趣。一些底<span class="GramE">栖魔鱼</span>在小群落中创建并控制邪教，像园丁播种种子一样培育它们。有些从过往的船只、永恒主宰城市和其他地方收集人形生物，并在深处的人为场景中与它们玩耍，就像孩子玩洋娃娃一样。其他则对类人生物不感兴趣，而是创造可怕的怪物，以自己的<span class="GramE">小方式</span>复制深<span class="GramE">溟</span>之主</span><span lang="EN-US">the
+Deep Lord</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">的工作。</span> <span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">最终，底<span class="GramE">栖魔鱼</span>喜欢玩弄低等生物，在情感、精神或身体上腐蚀它们。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>冒险引子</span><span lang="EN-US">Adventure Hooks<o:p></o:p></span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">如今，底<span class="GramE">栖魔鱼</span>遍布海洋</span><span lang="EN-US">;</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">它们的<span class="GramE">力量力量</span>由</span><span lang="EN-US">DM</span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">决定。他们是一个准备撼动世界的隐藏帝国吗？</span>
+<span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">还是只有少数人躲藏起来，掠夺被遗忘的渔村并从沉船中偷走奴隶？考虑以下想法。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">海盗王。新一轮海盗浪潮席卷暴风湾附近的贸易航线。反派是来自拉扎公国的穿云船长雷德</span><span lang="EN-US">·</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">达斯基亚</span><span lang="EN-US">Red <span class="SpellE">Daskia</span></span><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">。但她拥有来自恶魔时代的恶魔盟友和神器，使她的船速甚至超越林兰德船只并能消失在雾中。当冒险者们最终面对海盗女王时，发现她只是底<span class="GramE">栖魔鱼</span>策划者的代理人；角色们能阻止真正的恶棍吗？</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">沙华<span class="GramE">鱼人</span>袭击。冒险家们陷入了永恒主宰对沿海社区或和平船只的攻击。</span> <span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">一条底<span class="GramE">栖魔鱼控制</span>了一个主宰前哨站，并试图在永恒主宰和地表之间引发冲突；它还可能对主宰基地发动来自干皮<span class="GramE">佬</span>的攻击。冒险者们能否查出真相呢？</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">海中内战。底<span class="GramE">栖魔鱼</span>阴谋集团已经控制了哈尔</span><span class="GramE"><span lang="EN-US">’</span></span><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">沙瓦</span><span class="SpellE"><span lang="EN-US">Hal'shavar</span></span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">的领袖。他们利用这种力量在整个永恒主宰煽动骚乱，导致城市与城市之间的争斗。这些冲突可能会波及和平的旅行者；一次重大袭击甚至可能影响<span class="GramE">萨</span>恩或暴风湾。这能摧毁整个永恒主宰吗？</span> <span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">起初，冒险家们只遇到了冲突的副作用，直到一名巨龙预言的学者意识到，如果永恒主宰崩溃，暗影中的潜伏者就会被释放。</span>
+<span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">冒险者们能结束这场内战吗？</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+</div>
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '底栖魔鱼:最黑暗的深处'}, '*');
+        }
+</script>
+</body>
+</html>

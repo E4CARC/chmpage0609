@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>费尼亚：烈焰之海</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:Arial;
+	color:#C00000;
+	mso-font-kerning:22.0pt;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-font-kerning:1.0pt;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 6 字符1";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:131%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:样式4;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:#5B9BD5;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.20, li.20, div.20
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a1, li.a1, div.a1
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a2, li.a2, div.a2
+	{mso-style-name:边栏正文内容;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;}
+span.30
+	{mso-style-name:"样式3 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:样式3;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.31, li.31, div.31
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"样式3 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.a3
+	{mso-style-name:"译注 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:译注;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Arial;
+	color:#548235;
+	mso-themecolor:accent6;
+	mso-themeshade:191;
+	mso-style-textfill-fill-color:#548235;
+	mso-style-textfill-fill-themecolor:accent6;
+	mso-style-textfill-fill-alpha:100.0%;
+	mso-style-textfill-fill-colortransforms:lumm=75000;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;}
+p.a4, li.a4, div.a4
+	{mso-style-name:译注;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"译注 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:Arial;
+	color:#548235;
+	mso-themecolor:accent6;
+	mso-themeshade:191;
+	mso-style-textfill-fill-color:#548235;
+	mso-style-textfill-fill-themecolor:accent6;
+	mso-style-textfill-fill-alpha:100.0%;
+	mso-style-textfill-fill-colortransforms:lumm=75000;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.61
+	{mso-style-name:"标题 6 字符1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("5-费尼亚烈焰之海.files/header.html") fs;
+	mso-footnote-continuation-separator:url("5-费尼亚烈焰之海.files/header.html") fcs;
+	mso-endnote-separator:url("5-费尼亚烈焰之海.files/header.html") es;
+	mso-endnote-continuation-separator:url("5-费尼亚烈焰之海.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="layout-grid:15.6pt">
+<p class="MsoNormal"><span lang="EN-US" style="color:#538135;mso-themecolor:accent6;
+mso-themeshade:191;mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="图片_x0020_9" o:spid="_x0000_i1026" type="#_x0000_t75"
+ style='width:133.5pt;height:205.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="5-费尼亚烈焰之海.files/image004.jpg" o:title=""/>
+</v:shape><![endif]--><?if !vml?><img height="274" src="5-费尼亚烈焰之海.files/image004.jpg" v:shapes="图片_x0020_9" width="178"/><?endif?></span><span lang="EN-US" style="color:#538135;mso-themecolor:accent6;mso-themeshade:191"><o:p></o:p></span></p>
+<h1><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:"Arial Black";
+mso-hansi-font-family:"Arial Black"'>费尼亚：烈焰之海</span><span class="SpellE"><span lang="EN-US">Fernia</span></span><span lang="EN-US">: The Sea of Flame</span></h1>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">一片巨大的玄武岩从浩瀚的熔岩之海中升起。一座城堡横亘在它的顶端——那是一座闪闪发光的黄铜堡垒。熔岩瀑布从尖塔的边缘滚落而下。一群红龙腾空而起，绕着城堡盘旋，它们同步喷出烈焰，创造出一副令人目眩的奇景。欢迎来到至高熔炉，派对即将开始。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">简而言之，费尼亚体现了“火”的概念。这个位面上满是熔岩和烈焰，从巨大的火山到永远在烈火吞噬边缘的城市。但费尼亚并非只是平凡的火，拉玛尼亚是单纯的、自然的火焰的来源，其上有火山和火元素存在。而费尼亚则代表我们在烈火中所看到的一切，一切火焰所代表的思想。它的部分位层表现了狂野的毁灭之力，在那里，苍翠的森林永远在燃烧。它也融合了工业，这里无数的火矮人们在烈焰和锻炉中永远劳作。它还反映了狂野的激情、无法抑制的情感和壮绝的长眠，这里是火巨灵的国度，他们是烈焰之海的领主，永远都在努力超越自己的对手。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火焰吸引了大部分人的注意，但这里同样有着熔岩，同样有着大地。火矮人们站在大地和火焰之间，开采矿石，喂给他们永不饕足的熔炉。在深深的洞穴中，土巨灵们打磨着珠宝，欣赏着他们自己的秘藏。即使在这些地下位层，空气也会灼伤那些缺乏适当保护的生物的肺部，但对于敢于直面烈焰的冒险者们来说，在火与石的殿堂里将会有奇迹和财富等着他们的到来。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">位面共通特性</span><span lang="EN-US">UNIVERSAL PROPERTIES</span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">费尼亚的高热对于未经保护的生物来说是致命的，它甚至能够烧毁凡人的新陈代谢能力。以下特性适用于一整个位面。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">致命高温</span><span lang="EN-US">Deadly Heat</span></i></b><b><i><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">费尼亚的所有区域都适用于极度炎热环境（见《地下城主指南》第五章）。在一些尤其炎热的区域中，没有保护的生物每分钟必须进行体制豁免，而不是每小时进行。此外，所有生物都获得冷冻抗性，通常具有冷冻抗性的生物的生物变为免疫冷冻伤害。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">增强火焰</span><span lang="EN-US">Empowered Flame</span></i></b><b><i><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">当一个生物施展一个</span><span lang="EN-US">1</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">环及以上造成火焰伤害的法术时，它视作施展了比原本法术位高一环的法术。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">工艺之火</span><span lang="EN-US">Fires of Industry</span></i></b><b><i><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">当使用费尼亚之火替代凡火时，生物在使用工具（如使用厨师工具烘焙，或者使用铁匠工具锻造）进行的属性检定中具有优势。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">爆燃</span><span lang="EN-US">Burning <span class="SpellE">Brigh</span></span></i></b><b><i><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">当一个生物进行死亡豁免时，它必须进行一次额外豁免，并保留两次结果。此外，当一个生物获得</span><span lang="EN-US">1</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">级力竭时，它会获得一级额外力竭，当去除一级力竭时，也会额外去除一级力竭等级。在费尼亚，无论你是活着还是死去，都会飞快地发生。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><b><i><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">标准时间</span><span lang="EN-US">Standard Time</span></i></b><b><i><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">费尼亚的时间流逝和物质位面的相同，并且在其各个位层中也是一致的。在凡俗眼中，瑟瑞奥特看起来比奇斯瑞更加混乱。然而，瑟瑞奥特并不是由混沌的概念所定义的；更准确地说，是凡俗不能理解指导其变化的逻辑。此外，奇斯瑞的持续变化还都是自然的：火焰和闪电，石头和水。但在瑟瑞奥特，龙卷风可能是由墨水组成的。沙尘暴中的每一粒沙子可能都是安黛尔女王奥萝拉的微型半身像，或者是一颗小小的跳动的心脏。这不是单纯的混乱，而是非自然。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>位面居民</span><span lang="EN-US">DENIZENS</span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">费尼亚是天界生物和邪魔的家园，这些精魂体现了火焰的关键概念。但它的主要居民是土和火的元素生物。费尼亚没有原生的凡人或者显能生物：元素生物的数量被刻进了石头里，当一个元素死去时，一个新的元素便出现，取而代之。这可以有许多形式：新的魔蝠从火焰中喷出，土巨灵用青铜制造出新的火矮人。但总体而言，它的人口是稳定的。当一位火巨灵让两个火蜥蜴军团在一场盛大的表演中互相对抗时，他们知道火蜥蜴总是会重获新生。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">火巨灵</span><span class="SpellE"><span lang="EN-US">Efreet</span></span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火巨灵是费尼亚的天空中最闪亮的星辰。他们是贵族，居住在庞大的宅邸和城堡中，有无数仆人伺候，被惊人的奢华景象环绕。火焰消耗一切，而火巨灵是炫耀性消耗的大师。他们热情奔放，喜怒无常。他们任性而残忍，即使是在庆祝的时候也会消耗或摧毁他人的生命。然而，火巨灵并非征服者，因为他们已经有了他们可能想要的一切，他们的元素侍从们生来为他们服务，而对火巨灵来说，他们能够随手丢弃。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">自时间之始，火巨灵们一直在互相竞争。激烈的争斗可能会演变成戏剧性的决斗，而有时候，两个对手会在一场火焰与燃烧的鲜血的盛大演出中释放军队。但总的来说，两方的冲突还是止于社会性，双方都努力超越自己的对手。火巨灵的社会受到精心制定的历法约束，在费尼亚的每一刻，都有一个火巨灵在举办盛大的庆祝。有时候，这些盛会会有一个主题或诠释——比如揭幕一件新的艺术品，或者一件旧的艺术品史诗般的燃烧，或者一位火巨灵最近一次重生的一千年纪念日。其他时候，这些聚会不需要任何解释。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">如果一个火巨灵没有在举办一场盛会，那他就会在策划下一场，并且总是寻找着超越以往的一切盛会的方法。通常，他们会和位面内的资源合作，比如催动火矮人和土巨灵创造新的奇迹。但火巨灵有巨大的财力和穿越位面的能力，能够让他们来到物质位面。如果庆典中有一群表演同步喷火的红龙飞过，请记住，红龙并非费尼亚的原生物种，这个位面上也没有显能生物。因此，火巨灵是从另一个位面雇来了这群龙。想象一下，要做什么才能说服阿贡尼森的巨龙们来表演节目助兴！火巨灵们很少有和冒险者们打交道的理由，但如果角色们确实有什么可以提供的——或者足够有趣，能被邀请来参加宴会。那么火巨灵就会为他们花费时间。火巨灵们也可以充当邪术师的宗主——通常是邪魔契约——来给予凡人力量，但他们总会在寻找能够在无休止的社交争斗中胜过对手的东西。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">虽然火巨灵们可以提供许多东西，但任何和一位火巨灵的联系都是危险的。他们会遵守在签订合同时写下的任何条款，但冒险者最好明智地确保合同里有安全条款。毕竟，火巨灵是烈焰的精魂，他们会燃烧一切接触的东西。除了自己的地位和娱乐之外，他们什么都不在乎，也不会为摧毁生命稍作犹豫。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">在费尼亚有许多火巨灵贵族。这里是一些最著名的火巨灵，包括他们在凡人之中使用的公开头衔——他们的火族语头衔则要长的多。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">至高熔炉的阿扎拉苏丹</span><span lang="EN-US">Sultan <span class="SpellE">Azhalar</span> of High Hearth</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">立于社会序位的顶端。他组建了最庞大的军队，陶醉于军事力量的展示，其中也包括异域的战争机器。他的盛会通常包括角斗比赛或大型战争游戏。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火焰瀑布的莎什拉卡帕夏</span><span lang="EN-US">Pasha <span class="SpellE">Shashraqa</span> of <span class="SpellE">Firefall</span></span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">在社会序位中仅次于阿扎拉，并决心击败自己的这位对手。她自认为是一位艺术鉴赏家，可能会对艺术家冒险者的作品产生兴趣。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">闪金灰烬的拉卡什塔帕夏</span><span lang="EN-US">Pasha <span class="SpellE">Raqashtar</span> of Gold Ash</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">是最见多识广的火巨灵。他在西拉尼亚的无限集市中有许多朋友，还喜欢就萨法拉斯的战役结果打赌。他对赌博的兴趣可能会将冒险者置于他的影响之下，因为他可能会与另一位不朽者就一次冒险的结果打赌——然后试图在天平上放上一根燃烧的手指。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">土巨灵</span><span lang="EN-US">Dao</span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火巨灵们的诸多财富从何而来？谁修筑了尊贵的黄铜之城？土巨灵是这些问题的答案。火矮人们维持着锻炉熊熊燃烧，但是土巨灵从原始的大地中摘下神奇的宝石和纯净的精金，也是他们创造出了最伟大和非凡的奇迹。每一位土巨灵都有一个特点，一种独特的艺术风格和技艺。虽然他们能够打造出每一位凡人奇械师都垂涎欲滴的神器，但他们的技术无法轻易复制。他们的作品中有魔导科学的要素，但他们的大部分作品援用了费尼亚本身的精粹，定居在物质位面的土巨灵能做的要更加有限。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">土巨灵比炽烈的火巨灵要更加坚忍，不会举办奢侈的派对。他们仍然在进行激烈的社会竞争，努力创造出最辉煌的作品。这并不意味着他们的作品是最具威力的，相反，他们的竞争是关于创造出最需要的东西。土巨灵不需要黄金，所以火巨灵和他们的交易通常以易物的方式进行，这就形成了一个奇怪的二级市场。拉卡什塔可能会提供一队优秀的火蜥蜴战士以换取一顶绝妙的王冠，土巨灵用不上这些火蜥蜴，但他知道火巨灵阿扎尔正在募集士兵，所以</span><span lang="EN-US">…</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">冒险者们可能会因为土巨灵能够制造的作品而寻找他们，但土巨灵也可以是有趣的赞助人。一位土巨灵可能会需要一些职能在物质位面得到的稀有物质来完成最新的作品，所以他会求助于冒险者们帮他获得。或者一位土巨灵可能会将一队凡人当做调研组，来为自己最新的工作征求意见。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">这里有一些值得注意的土巨灵：</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">娜迦·灰烬</span><span class="SpellE"><span lang="EN-US">Naja</span></span><span lang="EN-US"> Ash</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">精于雕琢烈焰，创造出了大师级的神器或能够引导或生出火焰的工具。她创造了大部分火矮人，也能创造出其他元素生物、构装体，或者这两个概念之间的独特融合生物。她是多元宇宙中最重要的元素束缚大师，但要说服她和凡人分享自己的知识还需要花许多力气。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">萨尔·塞伦</span><span lang="EN-US">Sar <span class="SpellE">Saeren</span></span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">创造战争工具，从个人用的护甲和武器到宏伟的<span style="mso-no-proof:yes">攻城器械。火巨灵阿扎拉是他最大的客户，但所有火巨灵都看重他无与伦比的作品。他花费了无数纪元时光试图造出最完美的剑，并经常在物质位面上寻找传说中的宝剑，有时他会把找到的剑保存下来，有时只研究几分钟，而有时则会直接摧毁。</span></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">黄铜</span><span lang="EN-US">Brass</span></b><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">是土巨灵中最好的建筑师，创造了火巨灵最宏伟的宫殿。她总是对不同寻常的建筑感兴趣，还拜访过几次萨恩，研究那里的塔楼。她还以雕塑而闻名，从迷你的塑像到高耸入云的巨像，还有的可以从前者一样的小雕像转化为更大的东西，比如异能塑像。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">次级元素</span><span lang="EN-US">Lesser Elementals</span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">费尼亚是原始火元素和土元素的家园（虽然他们也能在拉玛尼亚找到），它吸引着那些希望燃烧或堆积的精魂。这些元素生物由纯粹的本能驱动，大多数时候被火巨灵和土巨灵所无视。元素是费尼亚最常见的居民，一位火巨灵不会是一个没有臣民可供支配的领主，而那些次级元素则起到了这个作用。虽然它们具备人形，但它们是极度怪异的不朽精魂，由构成自己的元素塑造，被独特的目的而驱动。火矮人为锻炉而生，而魔蝠这以恶作剧为乐。大部分次级元素只要有机会能追求自己的目标便会感到满足，但偶尔，一个次要元素会发展处意外的怪癖，促使它去追寻新的目标。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">这些元素的数量有限，因此它们的服务对火巨灵或土巨灵来说是有价值的。火巨灵和土巨灵常常交换他们元素臣民的服务，把他们送给蒙头或者敌对的宫廷。一般来说，这对元素并不要紧，但也有一些火蜥蜴反抗新的领主或魔蝠捉弄它们的新同伴的案例。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火矮人、魔蝠和火蜥蜴都是最常见的元素生物，但其他元素也可能在这个位面的一些地方遇到。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火矮人</span><span class="SpellE"><span lang="EN-US">Azer</span></span></b><b><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">土巨灵用黄铜制造了火矮人，并使用费尼亚的原初活化为他们灌注生命。他们是永不疲劳的工人，热爱火和金属的工作。土巨灵也许创造出了最伟大的奇迹，但火矮人们的工作十分出色——而且要多得多。火矮人们天生就是天才的匠人，能够被分配到任何涉及火焰的工作之中。然而，没有什么比一位火矮人被分配去烤面包而不是冶炼黄铜更悲惨的了。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">魔蝠</span><span class="SpellE"><span lang="EN-US">Mephits</span></span></b><b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">当在野外遭遇它们时，魔蝠是反复无常的恶作剧大师，它们的“恶作剧”通常会让位面旅行者们倒大霉。而那些为火巨灵服务的魔蝠通常会显得更加彬彬有礼——但当它们有机会恶作剧时，这副面孔会很快发生变化。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火蜥蜴</span><span lang="EN-US">Salamanders</span></b><b><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">。</span></b><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火蜥蜴是火巨灵的主要仆从，它们能够充当士兵或执行家务。每有一位手持华丽长矛的火蜥蜴军官，就有一个手持黄铜托盘的火蜥蜴管家。火蜥蜴非常骄傲，在它们的行列中，常常有关于等级和地位之间的巨大竞争。大多数火蜥蜴对凡人不屑一顾，但它们可能会嫉妒那些受到过多关注或青睐的冒险者。</span></p>
+<p class="MsoNormal"><span lang="EN-US" style="mso-no-proof:yes"><!--[if gte vml 1]><v:shape
+ id="图片_x0020_4" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:407.25pt;
+ height:268.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="5-费尼亚烈焰之海.files/image005.jpg" o:title=""/>
+</v:shape><![endif]--><?if !vml?><img height="358" src="5-费尼亚烈焰之海.files/image005.jpg" v:shapes="图片_x0020_4" width="543"/><?endif?></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">邪魔和天界生物</span><span lang="EN-US">Fiend and Celestials</span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">费尼亚的邪魔和天界生物是对火焰特定方面的概念的体现。火是他们外表的组成部分，他们可能有炽热的眼睛、橙红色的皮肤，或由火焰形成的翅膀和光环。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">天使</span><span lang="EN-US">Ange</span></b><span lang="EN-US">l</span><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">代表火焰提供的抚慰：它给予生命的温暖、阻挡阴影的光芒。费尼亚的天使通常是梵天神使或其他低等的天使，它们通常会尽其所能地帮助和抚慰旅行者。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">恶魔</span><span lang="EN-US">Demon</span></b><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">反映了火焰可怕的破坏力，无法控制的野火和焚烧屋宅的火花。它们狂野而暴力，当冒险者遇到它们时，很少会有好的结果。恶魔渴望燃烧一切美妙的物件。有时，这会导致它们盯上火巨灵的宏伟宅邸，但在其他时间里，它们也会影响物质位面中无人问津的火焰，或者偶尔会用火焰操控凡人。常见的恶魔包括夸塞魔（魔蝠的暴力对应版本）、长着燃烧羽翼的弗洛魔和可怕的巴洛炎魔。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">魔鬼</span><span lang="EN-US">Devil</span></b><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">展现的是那些将火焰用作武器或激发恐惧的用法——比如酷刑中燃烧的烙铁，燃烧的战场上垂死者的哭号。恶魔十分罕见，并且格外残忍。他们在费尼亚创造出痛苦和折磨，并在物质位面诱骗凡人纵火或施加火刑。像恶魔一样，它们通常只在位面相接是影响人类，但偶尔一个费尼亚蘑菇会设法溜进艾伯伦。小魔鬼、猬魔和深狱炼魔都可以在费尼亚找到。</span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>位层</span><span lang="EN-US">LAYERS</span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">费尼亚被叫做烈焰之海的广阔位层占据。在可以看见天空的地方，头顶几乎总是被灰烬和烟雾所遮蔽。较小的位层体现了特定的概念，比如炼狱或篝火。它们通常可以通过烈焰之海的岛屿上的燃烧圆环或者地下厅堂中的隧道抵达。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="31"><span style="font-family:宋体;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">烈焰之海</span><span lang="EN-US">The Sea of Fire</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">这片岩浆之海看上去似乎无穷无尽，比艾伯伦的任意一片海洋都要广阔。最终，烈焰之海会环绕起来，和自己相接。从至高熔炉往北，你会再次找到它，只是可能需要一个月的旅行。海中有岛屿、有玄武岩的尖塔和台地，其中有些有生物居住，但许多都荒芜而空旷。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火蜥蜴们乘坐黑钢的船只在熊熊燃烧的大海中航行，而火矮人们则乘坐黄铜编织的气球从上方飞过。许多岛屿上都有不灭明焰绘出的传送法阵，上面用火族语刻出的单词表示其目的地。任何熟练奥秘技能的施法者都能消耗一个</span><span lang="EN-US">3</span><span style="font-family:等线;mso-ascii-font-family:Calibri;
+mso-hansi-font-family:Calibri">环或更高的法术位来激活传送法阵，但除非会火族语，否则无法知道它通往何方。这里有几个值得注意的目的地。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">黄铜之城</span><span lang="EN-US">The City of Brass</span></i></b><b><i><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">黄铜之城是费尼亚唯一的大都市，一座属于火巨灵的充满奇迹的美丽城市。这里，一座高耸的火巨灵雕像手持着一个飞艇大小的不灭明焰气体。这尊雕像会改变自己的外貌，与目前统治这一社会的火巨灵外貌相符。这尊雕像和它所描绘的火巨灵都被称作“苏丹”。目前，现任苏丹是至高熔炉的阿扎拉。所有的火巨灵都在黄铜之城有自己的宅邸，但在任何时候，他们中的许多人都居住在自己的岛屿私人领地上。同样，也有一些土巨灵住在这里，展示他们的最新创作并承接新的委托。街道上满是火蜥蜴和魔蝠。来访的凡人值得好奇，但大多数元素生物都太忙了，无暇顾及他们。黄铜之城周围环绕着传送法阵，将它与所有的火巨灵领地和主要的锻造厂联结在一起。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火巨灵领地</span><span class="SpellE"><span lang="EN-US">Efreeti</span></span><span lang="EN-US"> Estates</span></i></b><b><i><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">每一位尊贵的火巨灵都有一座宏伟的宫殿或宅邸坐落在烈焰之海的岛屿上。尽管不如黄铜之城宏伟，这些领地也都极尽奢华，里面满是土巨灵创造的奇物和金属与烈焰的雕塑。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">铸造厂</span><span lang="EN-US">Foundry</span></i></b><b><i><span style="font-family:等线;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">铸造岛屿是工业的典范。有的专注于实质的工业，巨大的齿轮和轮盘在其中缓慢转动，链条升起落下。另一些则反映了魔导工业，那里有耀眼的符文和闪闪发光的能量场。在这里，火矮人们每时每刻都在劳作，为火巨灵和他们的仆人们生产寻常、军用和魔法的物品。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">地下厅堂</span><span lang="EN-US">Deep Halls</span></i></b><b><i><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">在铸造厂下方，隧道向下延伸到火海之下的地底。这些是土巨灵们的领域。如同上面的铸造厂一样，每一座都有独特的风格，与居住在那里的土巨灵情感上息息相关。熔岩之河、火焰池以及金属和矿物的矿脉贯穿厅堂。虽然不如火巨灵领地的豪华，但这些厅堂中常常展示了土巨灵在自己家中的奇妙创造。冒险者们可能会找到一个墙壁上装饰着一千把剑的厅堂，或者一座满是狡猾的构装鸣禽的黄铜花园。但有些土巨灵可能十分偏执，厅堂中也可能有大量强大而致命的陷阱。</span></p>
+<p class="31" style="text-indent:24.0pt"><span style="font-family:宋体;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">炼狱</span><span lang="EN-US">Infernos</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">炼狱是孤立的位层，展示了火焰的特定破坏行为。一座炼狱是一座燃烧的都市，魔鬼狂轰滥炸，而恶魔四处舞蹈，在其中肆意纵火。而在另一个位层，一个孤独的巴洛炎魔俯瞰着古老的森林被焚烧殆尽。这些烈火永远不会熄灭，位层的一部分会再生，而其他的会被烧尽，而炼狱就这样永生不息。</span></p>
+<p class="31" style="text-indent:24.0pt"><span style="font-family:宋体;mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri">篝火</span><span lang="EN-US">Campfire</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">这些小位层反映了火焰能带来的舒适。一处篝火位层可以是字面意义上的篝火，是一处在最为黑暗的荒野中发出的孤独光芒。而另一处篝火位层是一家名为“最初炉火”的客栈，在那里，天使老板阿烬为壁炉边的客人提供热饮——这家客栈便是因这座壁炉而得名。篝火位层是安全的避难所，也是旅行者休憩的理想场所。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>位面显能现象</span><span lang="EN-US">PLANAR
+MANIFESTATIONS</span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">以下是费尼亚影响物质位面的一些方式。</span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">显能区域</span><span lang="EN-US">MANIFEST ZONES</span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">和费尼亚有关的显能区域通常具有位面的一个或多个通用特性。那些有致命高温特性的的显能区域通常有不寻常的火山或地壳活动，一般会被避开。然而，卡尼斯家族一直在寻找具有“工业之火”特性的费尼亚显能区域，除了在工具检定上提供优势之外，它们还能让奇械师们制造出其他地区无法复制的附魔（特别是与塑能和火焰相关的附魔）。在极地，费尼亚的显能区域可以作为意想不到的避风港，或者提供不同寻常的地热效应。在坎纳斯，冰顶山附近的炉灰镇就以其宜人的气候和地热温泉闻名。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">相接和远离</span><span lang="EN-US">COTERMINOUS AND REMOTE</span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">当费尼亚相接时，气温会极剧上升，原本温暖而安全的区域可能会变得极度炎热，具有致命高温特性、增强火焰和爆燃特性。在此期间，罕见的情况下，被困在异常强烈的火焰里的生物可能会意外地被送到瑞费尼亚。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">当费尼亚远离时，高温会失去它的力量。生物在对抗高温效应的豁免掷骰和对抗造成火焰伤害的法术豁免掷骰中具有优势。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">通常来说，瑞西亚每五年就会有一整个拉维翁月的相接。而在五年之间，相接两年半之后，它会在一整个札兰提尔月都远离艾伯伦。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h3><span style="font-family:黑体;mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri">费尼亚神器</span><span class="SpellE"><span lang="EN-US">Risian</span></span><span lang="EN-US"> Artifacts</span></h3>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">土巨灵和费尼亚铸造厂创造了大量的奇物。他们的许多作品都是小饰品，比如真的能够喷出火焰的黄金模型龙。其他的这更厉害一些，比如异能塑像。虽然许多费尼亚的神器火焰有关——比如火球模组、焰舌剑——但并不局限于火焰和塑能。费尼亚的物品通常由黄铜、黑曜石或玄武岩制作，但土巨灵可以加工所有的金属。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">来自费尼亚等等另外两只资源是冷火和费尼亚灰。冷火是一种不灭明焰，能够在费尼亚自然产生，它的火焰有着温暖的油灰般的质感。费尼亚灰是又仅在火海生长的稀有树木烧成。费尼亚灰是塑能学派相关魔法物品的强力组成部分。此外，如施法者在施展一个一环或更高的造成火焰伤害的法术时洒下一撮费尼亚灰，他们造成火焰伤害法术会视作比原本消耗的法术位高一环。虽然并非所有树木都能产生费尼亚灰，但冷火和费尼亚灰偶尔也能从费尼亚显能区域获得。</span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p>
+<h2><span style='font-family:"微软雅黑",sans-serif;mso-ascii-font-family:Arial;
+mso-hansi-font-family:Arial'>费尼亚故事</span><span class="SpellE"><span lang="EN-US">Fernian</span></span><span lang="EN-US"> Stories</span></h2>
+<p class="MsoNormal" style="text-indent:21.0pt"><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">费尼亚难以到达，且十分危险，但这里有一些点子可能会作为冒险者们和费尼亚相关的冒险的灵感。</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">要命的派对</span><span lang="EN-US">The Life of the Party</span></i></b><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">火焰瀑布的莎什拉卡帕夏决心在下一场晚会中压过阿扎拉苏丹的风头。现在什么玩意儿最流行？当然是冒险者了。帕夏将冒险者们带到了费尼亚，承诺如果他们让晚会成功，就会好好奖励他们——而如果失败，就会把他们丢进烈焰之海。角色们能够在一个火巨灵和土巨灵的聚会上脱颖而出吗？他们知道该用那把叉子吗，尤其是在其中一把还熊熊燃烧的时候？当一位阿扎拉苏丹的火蜥蜴将军向一位队员挑战时，会发生什么？</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">炼狱机器</span><span lang="EN-US">The Inferno Machine</span></i></b><b><i><span style="font-family:
+等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">冒险者们偶然发现了一个翡翠利爪的营地。这些寻者们正在与土巨灵萨尔·塞伦合作，后者正在为他们制作一个能够夷平一座城市的毁灭性爆炸装置。冒险者们能够找出为什么赛伦要和翡翠离职合作吗？如果土巨灵是被迫的，他们能释放他吗？如果这是交易的一部分，他们是否能提出更好的报价？如果最终这枚炸弹被做了出来，他们又会怎么做？</span></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><span lang="EN-US"><o:p> </o:p></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt;mso-char-indent-count:2.0"><b><i><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">后门</span><span lang="EN-US">The Back Door</span></i></b><b><i><span style="font-family:等线;
+mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">。</span></i></b><span style="font-family:等线;mso-ascii-font-family:Calibri;mso-hansi-font-family:Calibri">冒险者们发现了一把奇怪的黄铜钥匙。当它插入一扇门后，会把这扇门变为通往费尼亚的一座酒馆，“最初炉火”的传送门。这把钥匙属于谁？它的能量多久能够使用一次？老板阿烬总是很高兴看到新的蛮快，但他们还会在这间酒馆里遇到谁呢？</span></p>
+</div>
+
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '费尼亚：烈焰之海'}, '*');
+        }
+</script>
+</body>
+</html>

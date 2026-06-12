@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞空艇与阿卡尼克斯</title>
+    <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:DengXian;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:微软雅黑;
+	panose-1:2 11 5 3 2 2 4 2 2 4;
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612049 1073772795 0 0 159 0;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"\@微软雅黑";
+	mso-font-charset:134;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147483001 718224464 22 0 262175 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:宋体;
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:微软雅黑;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:170%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-para-margin-top:1.0gd;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:0cm;
+	mso-para-margin-left:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	color:#822F18;
+	font-weight:bold;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:宋体;
+	color:black;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"标题 6 字符1";
+	mso-style-next:正文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.2pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:130%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:黑体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	mso-char-indent-count:2.0;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+span.MsoIntenseEmphasis
+	{mso-style-priority:21;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:#4472C4;
+	mso-themecolor:accent1;
+	font-style:italic;}
+span.1
+	{mso-style-name:"标题 1 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2
+	{mso-style-name:"标题 2 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3
+	{mso-style-name:"标题 3 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"标题 4 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5
+	{mso-style-name:"标题 5 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6
+	{mso-style-name:"标题 6 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.8
+	{mso-style-name:"标题 8 字符";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"页眉 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+span.a0
+	{mso-style-name:"页脚 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	mso-font-kerning:1.0pt;}
+p.30, li.30, div.30
+	{mso-style-name:样式3;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.10, li.10, div.10
+	{mso-style-name:样式1;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.a1, li.a1, div.a1
+	{mso-style-name:正文开头强调;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.20, li.20, div.20
+	{mso-style-name:样式2;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+p.40, li.40, div.40
+	{mso-style-name:样式4;
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.0pt;
+	font-family:等线;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	color:#5B9BD5;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;
+	font-style:italic;}
+span.100
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";
+	color:#AE0901;
+	font-weight:bold;}
+span.17
+	{mso-style-name:17;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+span.18
+	{mso-style-name:18;
+	mso-style-unhide:no;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.19
+	{mso-style-name:19;
+	mso-style-unhide:no;
+	font-family:等线;
+	mso-ascii-font-family:等线;
+	mso-fareast-font-family:等线;
+	mso-hansi-font-family:等线;
+	mso-bidi-font-family:"Times New Roman";
+	color:#7D0C00;
+	font-weight:bold;}
+span.200
+	{mso-style-name:20;
+	mso-style-unhide:no;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial Black",sans-serif;
+	mso-ascii-font-family:"Arial Black";
+	mso-fareast-font-family:微软雅黑;
+	mso-hansi-font-family:"Arial Black";
+	mso-bidi-font-family:"Times New Roman";
+	color:#C00000;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.21
+	{mso-style-name:21;
+	mso-style-unhide:no;
+	mso-ansi-font-size:15.0pt;
+	mso-bidi-font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.22
+	{mso-style-name:22;
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;
+	font-weight:bold;}
+span.61
+	{mso-style-name:"标题 6 字符1";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"标题 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"等线 Light";
+	mso-ascii-font-family:"等线 Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"等线 Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"等线 Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("飞空艇与阿卡尼克斯.files/header.html") fs;
+	mso-footnote-continuation-separator:url("飞空艇与阿卡尼克斯.files/header.html") fcs;
+	mso-endnote-separator:url("飞空艇与阿卡尼克斯.files/header.html") es;
+	mso-endnote-continuation-separator:url("飞空艇与阿卡尼克斯.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:810512752;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2038949998 -636855492 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:4;
+	mso-level-number-format:bullet;
+	mso-level-text:·;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:等线;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:2069573431;
+	mso-list-type:hybrid;
+	mso-list-template-ids:308694724 -1880224658 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F09F;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:84.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:105.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:126.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:147.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06C;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F06E;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F075;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:210.0pt;
+	text-indent:-21.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+</head>
+<body>
+
+<div class="WordSection1" style="LAYOUT-GRID:  15.6pt none">
+<h1><span lang="EN-US">IFAQ</span><span style='FONT-FAMILY: "微软雅黑",sans-serif; mso-ascii-font-family: "Arial Black"; mso-hansi-font-family: "Arial Black"'>：<span class="GramE">飞空艇与</span>阿卡尼克斯</span><span lang="EN-US"><o:p></o:p></span></h1>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">（译者:<span class="SpellE"><span lang="EN-US"><font face="Calibri">sipomao)</font></span></span></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span class="GramE"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">飞空艇和</span></span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">闪电列车的乘务员会如何协助它们各自的驾驶员？更具体地说，你让各自的乘务员们在你的游戏中做的最有趣的事情是什么？</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">在我看来，驾驶<span class="GramE">飞空艇和</span>驾驶帆船一样复杂。你必须维持风向（这是为了防止人们从上层甲板上被吹走）。有许多用于维持环的较小的聚焦晶体（</span><span lang="EN-US">focusing crystals</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">），如果状况发生急剧变化，它们就必须进行调整。精炼的龙晶（译注：指“龙晶尘”）需要被投入心脏部位来维持束缚，特别是当元素在满负荷运行时。同样的基本原理也适用于闪电列车，虽然就像把火车比作有桅杆的帆船（</span><span lang="EN-US">galleon</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">）一样，我认为闪电列车不需要大量的船员；你有两个工程师维护束缚并确保其他所有系统的运行，还有一些助手，以及售票员或工作人员来处理乘客。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">至于我的游戏呢？我基本上让船员们呆在外面做他们的工作，因为他们太忙了，以至于没有时间和冒险者聊天。在过去的一年里，我在一艘飞空艇上运行了多场一次性场景，冒险者遇到的主要</span><span lang="EN-US">NPC</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">是服务员，因为他的工作就是处理他们。当出现一个戏剧性的战斗场景时，我可能会汉初在场景中的一些正在做他们的工作的</span><span lang="EN-US">NPC</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">工作人员，并记下如果这些无辜者死亡，可能会发生糟糕的事情；如果一个火球术把维持风向的人干掉了，事情会变得非常不稳定！</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="MARGIN-TOP: 15.6pt">你能在林兰德家族的空港塔上找到哪些便利设施？<span lang="EN-US"><o:p></o:p></span></h4>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">当我写这篇文章的时候，我<span class="GramE">正坐</span>在机场里，我很容易就开始列出周围看到的东西。然而，重要的是要记住，航空旅行是最近才发展起来的。根据正典，第一艘元素飞艇在</span><span lang="EN-US">990YK</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">投入使用——仅仅比默认的开始时间早了</span><span lang="EN-US">8</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">年！在我看来，这个时间是指林兰<span class="GramE">德启动</span>航空旅行作为一项商业服务的时间，是数十年的实验和原型的巅峰。但作为一个行业，它还很年轻。同样，旅游业在很大程度上是自王座堡条约签署后的新发展；终<span class="GramE">末战争</span>还在进行的时候，<span class="GramE">布鲁兰人</span>不会去<span class="GramE">瑟</span>雷恩观光。所以我认为大多数林兰德<span class="GramE">空港塔都很</span>简单且实用的；他们没有足够的时间来建立你在大型现代化机场看到的全套便利设施。话虽如此，我认为在最大的中心，你可以开始看到这一点。我设想（林兰德）会和<span class="GramE">伽兰达达成协议，获得金龙旅店的特许经营权。你肯定会有一个配有清洁球（译注：</span></span><span lang="EN-US">cleansing sphere</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">，大概指“清洁石”）的厕所。想象有一个纪念品摊位并不是不合理的——在我们的世界里，纪念品已经存在了几千年</span><span lang="EN-US">!<o:p></o:p></span></p>
+<h4 style="MARGIN-TOP: 15.6pt">飞<span class="GramE">空艇是否</span>需要源源不断的精炼的龙晶来维持元素束缚？当船闲置的时候他们还需要这个吗？继续给这些船提供燃料有多贵？<span lang="EN-US"><o:p></o:p></span></h4>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">这是在《从终末战争中崛起》中提出的。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">艾伯伦龙晶是一种玫瑰色的晶体，有深红色的漩涡在深处流淌着，通常会被精炼成发光的粉末……艾伯伦龙晶尘被用于制造一些魔法物品，许多强大的工具——比如闪电列车和元素飞艇——都需要艾伯伦龙晶的持续消耗来维持它们的附魔法术。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">这里的关键词是维持它们的附魔法术。在飞空艇上，龙晶的消耗方式与汽油或煤炭不同；这并不是说龙晶的燃烧提供了动力，因为动力来自于元素。但是飞<span class="GramE">空艇除了</span>束缚之外，还有一个额外的次要附魔法术的网络——防风，还有控制系统——并且这些都是必须得到维护的。<span class="GramE">飞空艇工程师</span>的工作就是监控和维护这些附魔法术。所以龙晶不完全是“燃料”，但它们是确保船只继续运行的重要持续性开支。另一种看待它的方式是《星际迷航》中的二锂晶体；它们<span class="GramE">对星舰的</span>持续运行至关重要，但工程师们并没有经常把二锂倒入翘曲炉中。这艘船需要持续的龙晶供应，但消耗是一个长期的过程。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">解决具体的问题，能量并不是为了维持元素束缚而消耗的；元素被控制在<span class="GramE">凯</span>博尔龙晶中，是一个独立的系统。但正是能量的持续性消耗使元素与船只结合并产生元素环。以及是的，即使船静止不动，这种消耗仍在继续。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="MARGIN-TOP: 15.6pt"><span lang="EN-US"><span style="mso-spacerun: yes"> </span></span>“阿卡尼克斯”是<span class="GramE">浮空塔的</span>名字还是村庄的名字？<span lang="EN-US"><o:p></o:p></span></h4>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">对于那些不认识这个名字的人来说，阿卡尼克斯是科瓦<span class="GramE">雷著名的奥术</span>学习机构之一。它<span class="GramE">位于安黛尔</span>，被描述为悬浮在村庄上方的浮空塔。早期的正典资料使事情变得复杂化，认为阿卡尼克斯在战争前是<span class="GramE">瑟</span>雷恩的一部分（译注：《战争熔炉》里有问题的地方太多，日常开除官方设定籍</span><span lang="EN-US">/</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">擦屁股），这似乎很奇怪，<span class="GramE">因为奥术魔法</span>一直是安黛尔文化的焦点，而且阿卡尼克斯应该与魔法评议会密切相关。所以，这里是我的答案。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">阿卡尼克斯是一个村庄。长期以来，它一直被安黛尔和<span class="GramE">瑟雷</span>恩所争夺，在此之前，而在这之前是<span class="GramE">瑟</span>利奥斯特和达斯卡拉王国（</span><span class="SpellE"><span lang="EN-US">Daskara</span></span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">）；当它<span class="GramE">是伽利法</span>统治下的<span class="GramE">瑟</span>雷恩的一部分时，许多居民都是旅行到这个村庄的安黛尔人。因为神秘的是，阿卡尼克斯似乎激励着那些寻求<span class="GramE">奥术知识</span>的人。这并不总是令人难以置信地戏剧性的；并不是每个在阿卡尼克斯学习魔法的人都会彻底改变我们所知的科学领域。但如果你研究统计数据，如果人们在阿卡尼克斯学习，他们更有可能掌握奥术。所以：虽然阿卡尼克斯<span class="GramE">是伽利法</span>统治下的<span class="GramE">瑟</span>雷恩的一部分，但这里居住的大部分是安黛尔人，安黛尔人“认为”它是安黛尔的一部分，这就是为什么，<span class="GramE">当终末战争</span>爆发时，他们占领了它，并将<span class="GramE">浮空塔移动</span>到了那里来保护它。因为“浮空塔”就是这样的东西——你可以移动它们！<span class="GramE">浮空塔是</span>魔法评议会以前的资产，因此一直<span class="GramE">是奥术研究</span>和学习的设施，并被加强防御；所以这些塔在被移动之前就已经是一座现成的<span class="GramE">奥术学校</span>了，将它们放置在阿卡尼克斯中只是一个意外收获。无论这个区域的作用是什么，它增强了人们<span class="GramE">对奥术的</span>理解力，无论是在村庄上方还是在地面上，所以现代的学生都在塔里学习。但在塔出现之前，这个村庄被称为阿卡尼克斯。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">当然，第二个问题是，“为什么”这个地区如此有利于研究奥术。这在世界范围内被“认为”是一个谜，在阿卡尼克斯内部也存在正义。阿卡尼克斯位于一个<span class="GramE">瑟</span>兰尼斯的显能区域，所以这肯定是一个因素——这取决于</span><span lang="EN-US">DM</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">来决定这是否是一个活跃的门户，如果是，是否有一个特定的至高妖精与之相关（发明之母将是一个合乎逻辑的选择），或者这是一个更不易察觉的（显能）区域。但也许有一种更黑暗的力量在起作用。一些学者认为，阿卡尼克斯位于霸主苏·卡特什的灵魂监狱之上。曾经有一段时间，暗影女王的崇拜在阿卡尼克斯扎根，有一些人积极地与苏·卡特什或她的奴仆做交易。但即使没有任何积极的或恶意的影响，仅仅是守密者的存在就可以帮助那些寻求<span class="GramE">奥术知识</span>的人……这已经足以粉碎那些害怕暗影女王的人的反对意见。但是，所有这些都是“可能”发生的事。作为一名</span><span lang="EN-US">DM</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">，你可以决定阿卡尼克斯是否被苏·卡特什所困扰，被奥林所祝福，被发明之母所照看，或者是否有一个更奇怪的解释。</span><span lang="EN-US"><o:p></o:p></span></p>
+<h4 style="MARGIN-TOP: 15.6pt">阿卡尼克斯与在《从终末战争中崛起》中的安黛尔人对萨恩玻璃塔（<span lang="EN-US">Glass Tower</span>）的攻击有什么联系吗？难道正是因为安黛尔人对浮<span class="GramE">空塔非常</span>熟悉，所以它们才有能力完成这样的攻击吗？<span lang="EN-US"><o:p></o:p></span></h4>
+<p class="MsoNormal" style="TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">当然。魔法评议会利用从萨恩的浮空塔中收集到的信息创造了阿卡尼克斯，在终<span class="GramE">末战争</span>中，他们探索了将其武器化的方法。主要的问题是，他们为什么不把天城（</span><span lang="EN-US">Skyway</span><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">）作为目标，那样会摧毁更大的区域。有可能他们不想——玻璃塔是一次实验或者一个警告，但他们并不想造成如此极端的破坏。也有可能天城是更强大、更稳定，而在玻璃塔上使用的技术无法将其摧毁。</span><span lang="EN-US"><o:p></o:p></span></p>
+<p class="MsoNormal"><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">（译注：在三版的《地城志》</span><span lang="EN-US">117</span></span><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">期中，</span><span lang="EN-US">KB</span></span><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">曾写过一个名为《堕落天使</span><span lang="EN-US">Fallen Angel</span></span><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">》的模组。<span class="GramE">在该模组中</span>，将玻璃塔坠毁的原因归结于一个<span class="GramE">与砂主发生</span>冲突后被石化的光辉偶像，在试图复原光辉偶像的途中发生了爆炸，使玻璃塔坠落，而石化的光辉偶像的碎片连同玻璃塔的碎片一同散落在下层杜拉区的堕落区。而模组的内容就是有人雇佣</span><span lang="EN-US">PC</span></span><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">去收集这些碎片。）</span><span lang="EN-US"><o:p></o:p></span></span></p>
+<p class="MsoNormal"><span class="MsoIntenseEmphasis"><span style="FONT-FAMILY: 等线; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri">（不保真，建议有能力的人士把<span class="GramE">这篇短模组</span>翻译了）</span></span></p>
+<p class="MsoNormal"><span lang="EN-US"><o:p> </o:p></span></p></div>
+
+<script>
+        // 页面加载通知
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({type: 'pageLoaded', title: '飞空艇与阿卡尼克斯'}, '*');
+        }
+</script>
+</body>
+</html>
